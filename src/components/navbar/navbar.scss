@@ -1,0 +1,34 @@
+@import '../../index';
+
+.section-top-navbar {
+    background-color: $off_white;
+    font-family: 'poppins';
+    padding: 0;
+
+    .nav-item {
+        margin: 0 12px;
+        color: $logo_black !important;
+    }
+    
+    #navbar-img {
+        width: 50px;
+        margin-right: 10px;
+    }
+    
+    .navbar-brand {
+        color: $logo_black !important;
+        font-weight: 500;
+        font-size: 1.4rem !important;
+        margin: 0 5px;
+        vertical-align: middle;
+    } 
+    
+    .navbar-logo {
+        padding: 0 0;
+    }
+
+    // navbar toggler (for mobile device width)
+    .navbar-light .navbar-toggler-icon {
+        color: $logo_black !important;
+    }
+}

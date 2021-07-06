@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-// import logo
-import logo from './pmamco.png';
-
 // import stylesheet
 import './navbar.scss';
+
+// import logo
+import logo from './pmamco.png';
 
 class NavbarLink extends Component {
     render() {
@@ -28,20 +28,18 @@ export default class TopNavbar extends Component {
 
     render() {
         return (
-            <section className="section-header">
-                <Navbar expand="lg" variant="dark">
+            <section className="section-top-navbar">
+                <Navbar expand="lg" variant="light">
                     <Navbar.Brand href="/" className="navbar-brand">
                         <img src={logo} id="navbar-img" /> The Arctic Blog
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>
                         <Nav id="my-navbar" className="ml-auto">
-                            <NavbarLink id="projects" title="Projects" />
-                            <NavbarLink id="experience" title="Experience" />
-                            <NavbarLink id="education" title="Education" />
-                            <NavbarLink id="achievements" title="Achievements" />
-                            <NavbarLink id="notes" title="Notes" />
-                            <NavbarLink id="credits" title="Credits" />
+                            <NavbarLink id="events" title="Events" />
+                            <NavbarLink id="problems-of-the-week" title="Problem of the Week" />
+                            <NavbarLink id="constitution" title="Constitution" />
+                            <NavbarLink id="contact-us" title="Contact Us" />
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
