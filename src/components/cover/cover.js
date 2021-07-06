@@ -25,7 +25,7 @@ export default class Cover extends Component {
                                 properties of finite structures.
                             </p>
                             <p>
-                                Mathematical optimization, or mathematical programming, is the selection of a best element, 
+                                Mathematical Optimization, or mathematical programming, is the selection of a best element, 
                                 with regard to some criterion, from some set of available alternatives.
                             </p>
                         </div>
@@ -35,7 +35,7 @@ export default class Cover extends Component {
                         <div className="description applied-math-description">
                             <h2>Applied Mathematics</h2>
                             <p>
-                                Applied mathematics is the application of mathematical methods by different
+                                Applied Mathematics is the application of mathematical methods by different
                                 fields such as physics, engineering, medicine, biology, finance, business,
                                 computer science, and industry. Thus, applied mathematics is a combination
                                 of mathematical science and specialized knowledge.
@@ -47,7 +47,7 @@ export default class Cover extends Component {
                         <div className="description pure-math-description">
                             <h2>Pure Mathematics</h2>
                             <p>
-                                Pure mathematics is the study of mathematical concepts independently of any application
+                                Pure Mathematics is the study of mathematical concepts independently of any application
                                 outside mathematics. These concepts may originate in real-world concerns,
                                 and the results obtained may later turn out to be useful for practical
                                 applications, but pure mathematicians are not primarily motivated by

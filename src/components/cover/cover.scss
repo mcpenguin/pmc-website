@@ -18,8 +18,8 @@
             height: 600px;
         }
 
-        $a: 1; // presentation time for one image, in seconds
-        $b: 2; // duration for cross fading, in seconds
+        $a: 10; // presentation time for one image, in seconds
+        $b: 1; // duration for cross fading, in seconds
         $n: 3; // number of images
 
         $t: ($a + $b) * $n; // total animation duration
