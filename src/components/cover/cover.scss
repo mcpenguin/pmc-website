@@ -53,6 +53,31 @@
                     animation-delay: #{($n - $i) * ($a + $b) - $a}s;
                 }
             }
+
+            .description {
+                position: absolute;
+                background-color: black;
+                top: 0px;
+
+                p {
+                    color: white;
+                }
+            }
+
+            .pure-math-description {
+                @extend .description;
+                background-color: rgba(226, 54, 54, 0.541);
+            }
+
+            .applied-math-description {
+                @extend .description;
+                background-color: rgba(161, 90, 202, 0.541);
+            }
+
+            .combo-description {
+                @extend .description;
+                background-color: rgba(252, 128, 57, 0.541);
+            }
         }
     }
 }
