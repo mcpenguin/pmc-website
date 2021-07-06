@@ -10,7 +10,7 @@
         height: 500px;
         overflow-y: hidden;
 
-        $a: 10; // presentation time for one image, in seconds
+        $a: 6; // presentation time for one image, in seconds
         $b: 2; // duration for cross fading, in seconds
         $n: 3; // number of images
 
@@ -54,29 +54,31 @@
                 }
             }
 
+            // opacity of the backgrounds of the divs
+            $opacity: 0.5;
+
             .description {
                 position: absolute;
                 background-color: black;
+                height: 70%;
                 top: 0px;
-
-                p {
-                    color: white;
-                }
+                width: min(300px, 80%);
+                color: $off_white;
             }
 
             .pure-math-description {
                 @extend .description;
-                background-color: rgba(226, 54, 54, 0.541);
+                background-color: rgba(226, 54, 54, $opacity);
             }
 
             .applied-math-description {
                 @extend .description;
-                background-color: rgba(161, 90, 202, 0.541);
+                background-color: rgba(161, 90, 202, $opacity);
             }
 
             .combo-description {
                 @extend .description;
-                background-color: rgba(252, 128, 57, 0.541);
+                background-color: rgba(252, 128, 57, $opacity);
             }
         }
     }
