@@ -1,0 +1,27 @@
+// color scheme
+$logo_black: #010101;
+$logo_red: #fc0000;
+$logo_orange: #fa9d00;
+
+$off_white: #fff8f0;
+$mathsoc_pink: #c50076;
+$dark_purple: #52489c;
+$light_purple: #b4a0e5; 
+
+body {
+    font-family: 'Poppins';
+}
+
+#root {
+    // smooth scrolling and no horizontal scroll bar
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+}
