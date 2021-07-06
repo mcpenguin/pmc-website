@@ -7,6 +7,7 @@
 
 # testing
 /coverage
+/make-section-folder.sh
 
 # production
 /build
