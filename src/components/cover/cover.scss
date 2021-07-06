@@ -7,10 +7,18 @@
         position: relative;
         width: 100%;
         // min-width: 900px;
-        height: 600px;
+        height: 300px;
         overflow-y: hidden;
 
-        $a: 10; // presentation time for one image, in seconds
+        @media (max-width: #{$desktop_width}) {
+            height: 400px;
+        }
+
+        @media (max-width: #{$tablet_width}) {
+            height: 600px;
+        }
+
+        $a: 1; // presentation time for one image, in seconds
         $b: 2; // duration for cross fading, in seconds
         $n: 3; // number of images
 
@@ -54,8 +62,6 @@
                 }
             }
 
-            // opacity of the backgrounds of the divs
-            $opacity: 0.5;
             // width of the description in percent
             $description_width: 40%;
             // max width of the description, in pixels
@@ -86,17 +92,20 @@
 
             .pure-math-description {
                 @extend .description;
-                background-color: rgba(226, 54, 54, $opacity);
+                background: rgb(217, 28, 60);
+                background: linear-gradient(90deg, rgba(217, 28, 60, 0.9) 0%, rgba(231, 34, 93, 0.9) 100%);
             }
 
             .applied-math-description {
                 @extend .description;
-                background-color: rgba(161, 90, 202, $opacity);
+                background: rgb(161, 90, 202);
+                background: linear-gradient(90deg, rgba(161, 90, 202, 0.9) 0%, rgba(131, 86, 236, 0.9) 100%);
             }
 
             .combo-description {
                 @extend .description;
-                background-color: rgba(252, 128, 57, $opacity);
+                background: rgb(252, 128, 57);
+                background: linear-gradient(90deg, rgba(179, 73, 12, 0.9) 0%, rgba(148, 146, 5, 0.9)100%);
             }
         }
     }
