@@ -7,10 +7,10 @@
         position: relative;
         width: 100%;
         // min-width: 900px;
-        height: 500px;
+        height: 600px;
         overflow-y: hidden;
 
-        $a: 6; // presentation time for one image, in seconds
+        $a: 10; // presentation time for one image, in seconds
         $b: 2; // duration for cross fading, in seconds
         $n: 3; // number of images
 
@@ -56,14 +56,32 @@
 
             // opacity of the backgrounds of the divs
             $opacity: 0.5;
+            // width of the description in percent
+            $description_width: 40%;
+            // max width of the description, in pixels
+            $max_description_width: 300;
 
             .description {
                 position: absolute;
                 background-color: black;
                 height: 70%;
-                top: 0px;
-                width: min(300px, 80%);
+                width: 60%;
                 color: $off_white;
+
+                // position div in the center of the image
+                top: 15%;
+                left: 20%;
+
+                padding: 20px;
+
+                h2 {
+                    font-size: 2em;
+                }
+
+                @media (max-width: #{$tablet_width}) {
+                    left: 10%;
+                    width: 80%;
+                }
             }
 
             .pure-math-description {

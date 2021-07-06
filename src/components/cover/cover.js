@@ -18,19 +18,19 @@ export default class Cover extends Component {
                     <div className='cover-image'>
                         <img src={combo} />
                         <div className="description combo-description">
-                            <p>Combinatorics & Optimization</p>
+                            <h2>Combinatorics & Optimization</h2>
                         </div>
                     </div>
                     <div className='cover-image'>
                         <img src={applied_math} />
                         <div className="description applied-math-description">
-                            <p>Applied Mathematics</p>
+                            <h2>Applied Mathematics</h2>
                         </div>
                     </div>
                     <div className='cover-image'>
                         <img src={pure_math} />
                         <div className="description pure-math-description">
-                            <p>Pure Mathematics</p>
+                            <h2>Pure Mathematics</h2>
                         </div>
                     </div>
                 </div>
