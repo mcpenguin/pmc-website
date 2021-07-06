@@ -31,7 +31,7 @@ export default class TopNavbar extends Component {
             <section className="section-top-navbar">
                 <Navbar expand="lg" variant="light">
                     <Navbar.Brand href="/" className="navbar-brand">
-                        <img src={logo} id="navbar-img" /> The Arctic Blog
+                        <img src={logo} id="navbar-img" /> The Pure Math Club
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>
