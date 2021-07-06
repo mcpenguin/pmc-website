@@ -5,9 +5,9 @@ import React, { Component } from 'react';
 import './cover.scss';
 
 // import images
-import graph from './graph_carousel.png';
-import notes from './notes_carousel.jpg';
-import penguin from './penguin_carousel.png';
+import pure_math from './pure_math_bg.png';
+import applied_math from './applied_math_bg.png';
+import combo from './combo_bg.png';
 
 export default class Cover extends Component {
 
@@ -15,10 +15,15 @@ export default class Cover extends Component {
         return (
             <section id='cover'>
                 <div>
-                    <img src={notes} className="img1" />
-                    <img src={penguin} className="img2" />
-                    <img src={graph} className="img3" />
-                    {/* <img src={graph} className="img4" /> */}
+                    <div className='cover-image'>
+                        <img src={combo} />
+                    </div>
+                    <div className='cover-image'>
+                        <img src={applied_math} />
+                    </div>
+                    <div className='cover-image'>
+                        <img src={pure_math} />
+                    </div>
                 </div>
             </section>
         );
