@@ -5,10 +5,12 @@
 #cover {
     div {
         position: relative;
+        width: 100%;
+        // min-width: 900px;
         height: 500px;
         overflow-y: hidden;
 
-        $a: 10; // presentation time for one image, in seconds
+        $a: 5; // presentation time for one image, in seconds
         $b: 0.5; // duration for cross fading, in seconds
         $n: 3; // number of images
 
@@ -18,6 +20,8 @@
             vertical-align: middle;
             opacity: 1;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
 
             animation: images_fade;
             animation-timing-function: normal;
@@ -36,9 +40,6 @@
                 #{100% / $n} {
                     opacity: 0;
                 }
-                // #{($n - 1) / $n * 100%} {
-                //     opacity: 0;
-                // }
                 #{100% - $b / $t * 100%} {
                     opacity: 0;
                 }
@@ -49,7 +50,7 @@
 
             @for $i from 0 to $n {
                 &:nth-of-type(#{$i + 1}) {
-                    animation-delay: #{($n - $i) * ($a + $b) - $b}s;
+                    animation-delay: #{($n - $i) * ($a + $b) - $a}s;
                 }
             }
         }
