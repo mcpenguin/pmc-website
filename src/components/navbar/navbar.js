@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import TypeWriterEffect from 'react-typewriter-effect';
+
 // import stylesheet
 import './navbar.scss';
 
@@ -28,10 +30,19 @@ export default class TopNavbar extends Component {
 
     render() {
         return (
-            <section className="section-top-navbar">
+            <section id="top-navbar" className="section-top-navbar">
                 <Navbar expand="lg" variant="light">
                     <Navbar.Brand href="/" className="navbar-brand">
-                        <img src={logo} id="navbar-img" /> The Pure Math Club
+                        <img src={logo} id="navbar-img" />
+                        The Pure Math Club
+                        {/* <TypeWriterEffect 
+                            startDelay={200}
+                            multiText={[
+                                "The Pure Math Club",
+                                "The PMAMCO Club",
+                                "PMC"
+                            ]}
+                        /> */}
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>
@@ -43,6 +54,10 @@ export default class TopNavbar extends Component {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
+                <div className="navbar-bottom-borders">
+                    <div className="border-1"></div>
+                    <div className="border-2"></div> 
+                </div>
             </section>
         )
     }

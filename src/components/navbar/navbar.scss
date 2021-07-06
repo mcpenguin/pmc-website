@@ -1,6 +1,6 @@
 @import '../../index';
 
-.section-top-navbar {
+#top-navbar {
     background-color: $off_white;
     font-family: 'poppins';
     padding: 0;
@@ -30,5 +30,19 @@
     // navbar toggler (for mobile device width)
     .navbar-light .navbar-toggler-icon {
         color: $logo_black !important;
+    }
+
+    .navbar-bottom-borders {
+        * {
+            height: 2px;
+        }
+
+        .border-1 {
+            background-color: $logo_red;
+        }
+
+        .border-2 {
+            background-color: $logo_orange;
+        }
     }
 }

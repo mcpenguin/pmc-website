@@ -7,13 +7,16 @@ import {
     Route
 } from 'react-router-dom';
 
+// import components
 import TopNavbar from './components/navbar/navbar';
+import Cover from './components/cover/cover';
 
 class HomePage extends Component {
     render() {
         return (
             <>
                 <TopNavbar />
+                <Cover />
             </>
         )
     }
