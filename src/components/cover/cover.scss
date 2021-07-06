@@ -13,8 +13,6 @@
         $n: 3; // number of images
 
         $t: ($a + $b) * $n; // total animation duration
-
-
         img {
             position: absolute;
             opacity: 0;
@@ -23,7 +21,7 @@
             animation-timing-function: ease-in-out; 
             animation-iteration-count: infinite;
             animation-duration: #{$t}s; 
-            animation-direction: alternate;
+            animation-direction: normal;
 
             @keyframes images_fade {
                 0% {
@@ -31,6 +29,12 @@
                 }
                 #{100% / $n} {
                     opacity: 0;
+                }
+                #{($n - 1) / $n * 100%} {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
                 }
             }
     
