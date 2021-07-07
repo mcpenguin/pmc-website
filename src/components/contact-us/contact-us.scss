@@ -17,33 +17,95 @@
         flex-direction: row;
         justify-content: center;
 
+        // width of a contact me container, in vw
+        $cm_width: max(30vw, 300px);
+        // number of contact me elements
+        $n: 7;
+
+        // time it takes for logo to appear (in seconds)
+        $logo_appear_time: 0.5;
+        // time it takes for logo link to appear (in seconds)
+        $logo_link_appear_time: 1;
+
         .logo {
-            // width: 75vw;
+            width: $cm_width;
             display: flex;
             align-items: center;
-            height: 70px;
-
-            &:nth-of-type(1) {
-                order: 1;
-                background-color: green;
-            }
-
-            &:nth-of-type(2) {
-                order: 1;
-                background-color: yellow;
-            }
+            justify-content: center;
+            height: 50px;
 
             .logo-icon {
-                font-size: 3em;
+                font-size: 2em;
                 order: 0;
-                padding: 2px;
+                padding: 0 5px;
+                opacity: 0;
+
+                animation: logo-appear-and-move;
+                animation-timing-function: normal;
+                animation-duration: 1.5s;
+                animation-direction: normal;
+                animation-fill-mode: forwards;
             }
 
             .logo-link {
-                font-family: 'Open Sans', sans-serif;
+                font-family: "Open Sans", sans-serif;
                 order: 1;
+                opacity: 0;
+                padding: 0 5px;
+
+                animation: logo-link-appear;
+                animation-timing-function: normal;
+                animation-duration: 1s;
+                // animation-delay: 1s;
+                animation-direction: normal;
+                animation-fill-mode: forwards;
+            }
+
+            @for $i from 1 to $n {
+                .logo-icon:nth-of-type(#{$i}) {
+                    animation-delay: #{$logo_appear_time * $i}s;
+                }
+
+                .logo-link:nth-of-type(#{$i}) {
+                    animation-delay: #{$logo_link_appear_time * $i}s;
+                }
+            }
+
+            @keyframes logo-appear-and-move {
+                0% {
+                    opacity: 0;
+                    transform: translateX(30%);
+                }
+                #{$logo_appear_time / ($logo_appear_time * $logo_link_appear_time) * 100%} {
+                    opacity: 1;
+                    transform: translateX(30%);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            @keyframes logo-link-appear {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
             }
         }
 
+        @for $i from 1 through $n {
+            .logo:nth-of-type(#{$i}) {
+                .logo-icon {
+                    animation-delay: #{$logo_appear_time * $i}s;
+                }
+
+                .logo-link {
+                    animation-delay: #{$logo_appear_time * $i + $logo_link_appear_time}s;
+                }
+            }
+        }
     }
 }

@@ -31,11 +31,31 @@ export default class ContactUs extends Component {
                 <div className='logo-container'>
                     <ContactMeIcon
                         logoIcon="fas fa-address-book"
-                        desc="https://www.w3schools.com/jsref/prop_win_innerheight.asp"
+                        desc="www.facebook.com/groups/uwpmc1"
                     />
                     <ContactMeIcon
                         logoIcon="fas fa-address-book"
-                        desc="https://www.w3schools.com/jsref/prop_win_innerheight.asp"
+                        desc="www.facebook.com/groups/uwpmc2"
+                    />
+                    <ContactMeIcon
+                        logoIcon="fas fa-address-book"
+                        desc="www.facebook.com/groups/uwpmc3"
+                    />
+                    <ContactMeIcon
+                        logoIcon="fas fa-address-book"
+                        desc="www.facebook.com/groups/uwpmc4"
+                    />
+                    <ContactMeIcon
+                        logoIcon="fas fa-address-book"
+                        desc="www.facebook.com/groups/uwpmc5"
+                    />
+                    <ContactMeIcon
+                        logoIcon="fas fa-address-book"
+                        desc="www.facebook.com/groups/uwpmc6"
+                    />
+                    <ContactMeIcon
+                        logoIcon="fas fa-address-book"
+                        desc="www.facebook.com/groups/uwpmc7"
                     />
                 </div>
             </section>
