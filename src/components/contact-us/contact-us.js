@@ -28,6 +28,7 @@ class ContactMeIcon extends Component {
         },
         {
             rootMargin: '0px',
+            // percentage of the windwo you need to see for the animation to start
             threshold: 0.8,
         }
     )
@@ -37,6 +38,7 @@ class ContactMeIcon extends Component {
     }
 
     render() {
+        // start animation if section is in view
         return (
             <div className='logo'>
                 <div className={`logo-icon ${this.state.isElementVisible ? 'start-logo-icon-animation' : ''}`}>
@@ -55,8 +57,8 @@ export default class ContactUs extends Component {
     render() {
         return (
             <section id='contact-us'>
-                <div className="red-line"></div>
-                <div className="orange-line"></div>
+                <div className="line red-line"></div>
+                <div className="line orange-line"></div>
                 <h2>Contact Us</h2>
                 <div className='logo-container'>
                     <ContactMeIcon

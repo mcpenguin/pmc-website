@@ -1,9 +1,7 @@
 @import "../../index";
 
 #contact-us {
-    padding: 20px 10% 20px 10%;
     height: 400px;
-    margin-top: 40px;
 
     background-color: $off_white;
     background: url("./contact-us-bg.svg");
@@ -16,7 +14,20 @@
         height: 600px;
     }
 
+    .line {
+        height: 2px;
+    }
+
+    .red-line {
+        background-color: $logo_red;
+    }
+
+    .orange-line {
+        background-color: $logo_orange;
+    }
+
     h2 {
+        padding-top: 20px;
         text-align: center;
     }
 
@@ -26,8 +37,10 @@
         flex-direction: row;
         justify-content: center;
 
+        padding: 0px 10% 20px 10%;
+
         // width of a contact me container, in vw
-        $cm_width: max(39vw, 300px);
+        $cm_width: max(35vw, 400px);
         // number of contact me elements
         $n: 7;
 
@@ -64,10 +77,16 @@
             }
 
             .logo-link {
-                font-family: "Open Sans", sans-serif;
+                font-family: "Poppins", sans-serif;
+                font-size: 1.2em;
                 order: 1;
                 opacity: 0;
                 padding: 0 5px;
+                font-weight: 500;
+
+                @media (max-width: #{$desktop_width}) {
+                    font-size: 0.9em;
+                }
 
                 @media (max-width: #{$mobile_width}) {
                     font-size: 0.8em;
