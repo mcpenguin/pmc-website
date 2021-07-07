@@ -62,7 +62,6 @@
             &:nth-of-type(2) {
                 text-align: right;
                 position: relative;
-                left: -6%;
 
                 @media (max-width: $mobile_width) {
                     left: 0px;
