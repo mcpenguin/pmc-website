@@ -20,6 +20,7 @@ class HomePage extends Component {
                 <TopNavbar />
                 <Cover />
                 <Welcome />
+                <FAQs />
             </>
         )
     }
