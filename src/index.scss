@@ -6,7 +6,7 @@ $logo_orange: #fa9d00;
 $off_white: #f3f3f3;
 $mathsoc_pink: #c50076;
 $dark_purple: #52489c;
-$light_purple: #b4a0e5; 
+$light_purple: #b4a0e5;
 
 // breakpoints
 $mobile_width: 480px;
@@ -14,7 +14,7 @@ $tablet_width: 768px;
 $desktop_width: 1080px;
 
 body {
-    font-family: 'Poppins';
+    font-family: "Poppins";
 }
 
 #root {
@@ -23,14 +23,12 @@ body {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Poppins'
-}
-
-h1 {
-    font-weight: 500;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-    font-weight: 400;
+    font-family: "Poppins";
 }

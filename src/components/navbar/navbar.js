@@ -28,14 +28,30 @@ class NavbarLink extends Component {
 
 export default class TopNavbar extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            matches: window.matchMedia("(max-width: 480px)").matches
+        };
+    }
+
+    componentDidMount() {
+        const handler = e => this.setState({ matches: e.matches });
+        window.matchMedia("(max-width: 480px)").addListener(handler);
+    }
+
     render() {
         return (
             <section id="top-navbar" className="section-top-navbar">
                 <Navbar expand="lg" variant="light">
                     <Navbar.Brand href="/" className="navbar-brand">
                         <img src={logo} id="navbar-img" />
-                        The Pure Math Club
-                        {/* <TypeWriterEffect 
+                        <span>
+                            {
+                                // this.state.matches ? "PMC" : "The Pure Math Club"
+                                "The Pure Math Club"
+                            }
+                            {/* <TypeWriterEffect 
                             startDelay={200}
                             multiText={[
                                 "The Pure Math Club",
@@ -43,6 +59,7 @@ export default class TopNavbar extends Component {
                                 "PMC"
                             ]}
                         /> */}
+                        </span>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="my-navbar" />
                     <Navbar.Collapse>
@@ -56,7 +73,7 @@ export default class TopNavbar extends Component {
                 </Navbar>
                 <div className="navbar-bottom-borders">
                     <div className="border-1"></div>
-                    <div className="border-2"></div> 
+                    <div className="border-2"></div>
                 </div>
             </section>
         )

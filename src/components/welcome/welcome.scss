@@ -1,1 +1,20 @@
 @import '../../index';
+
+#welcome {
+    background-color: $off_white;
+    padding: 20px max(15px, 15%);
+
+    h3 {
+        font-size: 3em;
+
+        @media (max-width: $mobile_width) {
+            font-size: 1.2em;
+        }
+    }
+
+    h5 {
+        font-size: 1em;
+        color: $dark_purple;
+    }
+
+}

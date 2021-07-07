@@ -13,14 +13,32 @@
     #navbar-img {
         width: 50px;
         margin-right: 10px;
+
+        @media (max-width: $mobile_width) {
+            width: 30px;
+        }
     }
     
     .navbar-brand {
         color: $logo_black !important;
         font-weight: 500;
-        font-size: 1.4rem !important;
+        font-size: 1.5rem !important;
         margin: 0 5px;
         vertical-align: middle;
+
+        @media (max-width: $mobile_width) {
+            font-size: 1.0rem !important;
+        }
+
+        span {
+            position: relative;
+            top: 1px;
+            right: -5px;
+
+            @media (max-width: $mobile_width) {
+                right: 0px;
+            }
+        }
     } 
     
     .navbar-logo {
@@ -29,7 +47,12 @@
 
     // navbar toggler (for mobile device width)
     .navbar-light .navbar-toggler-icon {
-        color: $logo_black !important;
+
+        @media (max-width: $mobile_width) {
+            width: 1rem;
+            height: 1rem;
+            background-size: 130%;
+        }
     }
 
     .navbar-bottom-borders {

@@ -15,7 +15,7 @@
         }
 
         @media (max-width: #{$tablet_width}) {
-            height: 600px;
+            height: 100vh;
         }
 
         $a: 10; // presentation time for one image, in seconds
