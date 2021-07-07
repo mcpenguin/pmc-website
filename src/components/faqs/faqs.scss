@@ -8,6 +8,8 @@
         align-items: center;
         flex-wrap: wrap;
 
+        background-color: white;
+
         img {
             width: min(500px, 100%);
             object-fit: cover;
@@ -37,7 +39,7 @@
 
         // text styles
         h2 {
-            font-size: 2.6em;
+            font-size: 2.4em;
             font-weight: 600;
             color: rgb(233, 10, 84);
         }
