@@ -10,6 +10,7 @@ import {
 // import components
 import TopNavbar from './components/navbar/navbar';
 import Cover from './components/cover/cover';
+import Welcome from './components/welcome/welcome';
 
 class HomePage extends Component {
     render() {
@@ -17,6 +18,7 @@ class HomePage extends Component {
             <>
                 <TopNavbar />
                 <Cover />
+                <Welcome />
             </>
         )
     }
