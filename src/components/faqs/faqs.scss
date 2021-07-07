@@ -4,31 +4,57 @@
     .faq {
         padding: 40px 8% 0 8%;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
+
+        img {
+            width: min(500px, 100%);
+            object-fit: cover;
+            height: 50vh;
+            border-radius: 10%;
+            order: 0;
+        }
+
+        div {
+            width: 50%;
+        }
 
         &:nth-of-type(odd) {
             div {
                 order: 1;
+                padding-left: 5%;
             }
         }
 
         &:nth-of-type(even) {
             div {
                 order: -1;
+                padding-right: 5%;
             }
         }
 
-        img {
-            width: min(500px, 100%);
-            object-fit: cover;
-            height: 300px;
-            border-radius: 10%;
-            order: 0;
+        @media (max-width: #{$medium_desktop_width}) {
+            img {
+                width: 98%;
+                // margin: 0 2.5%;
+            }
+
+            div {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+                order: 1 !important;
+            }
         }
 
-        div {
-            width: 60%;
-            padding: 10px 3%;
+        @media (max-width: #{$mobile_width}) {
+            padding: 5px 8%;
+
+            div {
+                margin-top: 15px;
+                padding: 0 10px;
+            }
         }
     }
 }
