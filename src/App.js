@@ -12,6 +12,7 @@ import TopNavbar from './components/navbar/navbar';
 import Cover from './components/cover/cover';
 import Welcome from './components/welcome/welcome';
 import FAQs from './components/faqs/faqs'
+import ContactUs from './components/contact-us/contact-us';
 
 class HomePage extends Component {
     render() {
@@ -21,6 +22,7 @@ class HomePage extends Component {
                 <Cover />
                 <Welcome />
                 <FAQs />
+                <ContactUs />
             </>
         )
     }
@@ -31,6 +33,7 @@ class EventsPage extends Component {
         return (
             <>
                 <TopNavbar />
+                <ContactUs />
             </>
         )
     }
@@ -41,6 +44,7 @@ class POWPage extends Component {
         return (
             <>
                 <TopNavbar />
+                <ContactUs />
             </>
         )
     }
@@ -51,6 +55,7 @@ class ConstitutionPage extends Component {
         return (
             <>
                 <TopNavbar />
+                <ContactUs />
             </>
         )
     }
@@ -61,6 +66,7 @@ class ContactUsPage extends Component {
         return (
             <>
                 <TopNavbar />
+                <ContactUs />
             </>
         )
     }
