@@ -11,6 +11,7 @@ import {
 import TopNavbar from './components/navbar/navbar';
 import Cover from './components/cover/cover';
 import Welcome from './components/welcome/welcome';
+import FAQs from './components/faqs/faqs'
 
 class HomePage extends Component {
     render() {
