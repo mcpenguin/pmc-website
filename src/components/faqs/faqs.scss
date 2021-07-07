@@ -1,14 +1,14 @@
 @import "../../index";
 
 #faqs {
+    margin-bottom: 40px;
+
     .faq {
         padding: 40px 8% 0 8%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-
-        margin-bottom: 40px;
 
         background-color: white;
 
@@ -47,8 +47,11 @@
         }
 
         @media (max-width: #{$medium_desktop_width}) {
+            padding: 10px 8% 0 8%;
+
             img {
                 width: 98%;
+                margin-bottom: 20px;
                 // margin: 0 2.5%;
             }
 
