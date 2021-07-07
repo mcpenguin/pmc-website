@@ -7,16 +7,16 @@
         position: relative;
         width: 100%;
         // min-width: 900px;
-        height: 300px;
+        height: 85vh;
         overflow-y: hidden;
 
-        @media (max-width: #{$desktop_width}) {
-            height: 400px;
-        }
+        // @media (max-width: #{$desktop_width}) {
+        //     height: 400px;
+        // }
 
-        @media (max-width: #{$tablet_width}) {
-            height: 100vh;
-        }
+        // @media (max-width: #{$tablet_width}) {
+        //     height: 80vh;
+        // }
 
         $a: 10; // presentation time for one image, in seconds
         $b: 1; // duration for cross fading, in seconds
@@ -81,31 +81,61 @@
                 padding: 20px;
 
                 h2 {
-                    font-size: 2em;
+                    font-size: 2.2em;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 1.25em;
+                    font-weight: 400;
                 }
 
                 @media (max-width: #{$tablet_width}) {
+                    left: 15%;
+                    width: 70%;
+                    // height: 60%;
+
+                    h2 {
+                        font-size: 1.8em;
+                    }
+
+                    p {
+                        font-size: 1.15em;
+                    }
+                }
+
+                @media (max-width: #{$mobile_width}) {
+                    top: 10%;
                     left: 10%;
                     width: 80%;
+                    height: 80%;
+
+                    h2 {
+                        font-size: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
                 }
             }
 
             .pure-math-description {
                 @extend .description;
                 background: rgb(217, 28, 60);
-                background: linear-gradient(90deg, rgba(217, 28, 60, 0.9) 0%, rgba(231, 34, 93, 0.9) 100%);
+                background: linear-gradient(90deg, rgba(217, 28, 60, 0.95) 0%, rgba(231, 34, 93, 0.95) 100%);
             }
 
             .applied-math-description {
                 @extend .description;
                 background: rgb(161, 90, 202);
-                background: linear-gradient(90deg, rgba(161, 90, 202, 0.9) 0%, rgba(131, 86, 236, 0.9) 100%);
+                background: linear-gradient(90deg, rgba(161, 90, 202, 0.95) 0%, rgba(131, 86, 236, 0.95) 100%);
             }
 
             .combo-description {
                 @extend .description;
                 background: rgb(252, 128, 57);
-                background: linear-gradient(90deg, rgba(179, 73, 12, 0.9) 0%, rgba(148, 146, 5, 0.9)100%);
+                background: linear-gradient(90deg, rgba(179, 73, 12, 0.95) 0%, rgba(148, 146, 5, 0.95) 100%);
             }
         }
     }

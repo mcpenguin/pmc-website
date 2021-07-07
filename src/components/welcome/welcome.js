@@ -8,13 +8,14 @@ export default class Welcome extends Component {
     render() { 
         return (
             <section id='welcome'>
-                <div>
-                    <h5>Welcome to the...</h5>
+                <div class='typewriter-effect'>
+                    <h5>Welcome to the</h5>
                     <h3>
-                        Pure Mathematics, Applied Mathematics and Combinatorics & Optimization
+                        <span className='logo-letter'>P</span>ure <span className='logo-letter'>M</span>athematics, <span className='logo-letter'>A</span>pplied <span className='logo-letter'>M</span>athematics, 
+                        and <span className='logo-letter'>C</span>ombinatorics <span className='logo-letter'>&</span> <span className='logo-letter'>O</span>ptimization
                     </h3>
                     <h5>
-                        ...club!
+                        club!
                     </h5>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
