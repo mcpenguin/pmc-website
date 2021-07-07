@@ -1,5 +1,49 @@
-@import '../../index';
+@import "../../index";
 
 #contact-us {
+    padding-top: 20px;
+    background-color: $off_white;
+    height: 600px;
 
+    margin-top: 40px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .logo-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        .logo {
+            // width: 75vw;
+            display: flex;
+            align-items: center;
+            height: 70px;
+
+            &:nth-of-type(1) {
+                order: 1;
+                background-color: green;
+            }
+
+            &:nth-of-type(2) {
+                order: 1;
+                background-color: yellow;
+            }
+
+            .logo-icon {
+                font-size: 3em;
+                order: 0;
+                padding: 2px;
+            }
+
+            .logo-link {
+                font-family: 'Open Sans', sans-serif;
+                order: 1;
+            }
+        }
+
+    }
 }
