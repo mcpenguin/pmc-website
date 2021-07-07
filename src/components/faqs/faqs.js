@@ -43,7 +43,7 @@ const data = [
     },
     {
         image: 'fluid_dynamics',
-        question: "You guys have a sick blackboard/whiteboard in your office, can I work in there?",
+        question: "You guys have a sick blackboard in your office, can I work in there?",
         answer: <>
             <p>
                 We often work on our assignments together at our office. 
