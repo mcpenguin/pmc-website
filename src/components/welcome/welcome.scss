@@ -4,62 +4,90 @@
     background-color: $off_white;
     padding: 20px max(15px, 15%);
 
-    h3 {
-        font-size: 3em;
-        font-weight: 300;
+    hr {
+        background: rgb(218, 25, 131);
+    }
 
-        color: rgb(218, 25, 131);
-        // background: linear-gradient(
-        //     90deg,
-        //     rgba(194, 26, 100, 1) 0%,
-        //     rgba(176, 29, 37, 1) 34%,
-        //     rgba(204, 98, 37, 1) 70%,
-        //     rgba(173, 172, 32, 1) 100%
-        // );
-        // background-clip: text;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
+    .title {
+        h3 {
+            font-size: 3em;
+            font-weight: 300;
 
-        .logo-letter {
-            font-weight: 600;
-            text-decoration: none;
-        }
+            color: rgb(218, 25, 131);
+            // text gradient
+            // background: rgb(218, 25, 131);
+            // background: linear-gradient(
+            //     90deg,
+            //     rgba(194, 26, 100, 1) 0%,
+            //     rgba(176, 29, 37, 1) 34%,
+            //     rgba(204, 98, 37, 1) 70%,
+            //     rgba(173, 172, 32, 1) 100%
+            // );
+            // background-clip: text;
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
 
-        @media (max-width: $mobile_width) {
-            font-size: 2.5em;
-        }
-
-        @media (max-width: 380px) {
-            font-size: 2em;
-
-            span {
+            .logo-letter {
+                font-weight: 900;
                 text-decoration: none;
+            }
+
+            @media (max-width: $mobile_width) {
+                font-size: 2.5em;
+            }
+
+            @media (max-width: 380px) {
+                font-size: 2em;
+
+                span {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        h5 {
+            font-size: 2em;
+            color: $dark_purple;
+            font-style: italic;
+            // text-decoration: dashed;
+
+            @media (max-width: $mobile_width) {
+                font-size: 1.5em;
+            }
+
+            &:nth-of-type(1) {
+                text-align: left;
+            }
+
+            &:nth-of-type(2) {
+                text-align: right;
+                position: relative;
+                left: -6%;
+
+                @media (max-width: $mobile_width) {
+                    left: 0px;
+                }
             }
         }
     }
 
-    h5 {
-        font-size: 2em;
-        color: $dark_purple;
-        font-style: italic;
-        // text-decoration: dashed;
+    .subtitle {
+        // display: flex;
+        // justify-content: center;
 
-        @media (max-width: $mobile_width) {
-            font-size: 1.5em;
+        h6 {
+            font-size: 1.2em;
+            color: #8217c0;
+            text-align: center;
+            // width: 90%;
         }
+    }
 
-        &:nth-of-type(1) {
-            text-align: left;
-        }
+    .about {
+        margin: 20px 0;
 
-        &:nth-of-type(2) {
-            text-align: right;
-            position: relative;
-            left: -5%;
-
-            @media (max-width: $mobile_width) {
-                left: 0px;
-            }
+        p {
+            font-size: 1.3em;
         }
     }
 }
