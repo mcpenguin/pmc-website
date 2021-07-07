@@ -6,13 +6,13 @@
     background-color: $off_white;
     background: url("./contact-us-bg.svg");
 
-    @media (max-width: #{$tablet_width}) {
+    @media (max-width: #{$medium_desktop_width}) {
         height: 550px;
     }
 
-    @media (max-width: #{$mobile_width}) {
-        height: 600px;
-    }
+    // @media (max-width: #{$mobile_width}) {
+    //     height: 600px;
+    // }
 
     .line {
         height: 2px;
