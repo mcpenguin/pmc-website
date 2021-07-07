@@ -1,11 +1,20 @@
 @import "../../index";
 
 #contact-us {
-    padding-top: 20px;
-    background-color: $off_white;
-    height: 600px;
-
+    padding: 20px 10% 20px 10%;
+    height: 400px;
     margin-top: 40px;
+
+    background-color: $off_white;
+    background: url("./contact-us-bg.svg");
+
+    @media (max-width: #{$tablet_width}) {
+        height: 550px;
+    }
+
+    @media (max-width: #{$mobile_width}) {
+        height: 600px;
+    }
 
     h2 {
         text-align: center;
@@ -18,12 +27,12 @@
         justify-content: center;
 
         // width of a contact me container, in vw
-        $cm_width: max(30vw, 300px);
+        $cm_width: max(39vw, 300px);
         // number of contact me elements
         $n: 7;
 
         // time it takes for logo to appear (in seconds)
-        $logo_appear_time: 0.5;
+        $logo_appear_time: 0.2;
         // time it takes for logo link to appear (in seconds)
         $logo_link_appear_time: 1;
 
@@ -32,7 +41,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 50px;
+            height: 60px;
 
             .logo-icon {
                 font-size: 2em;
@@ -40,6 +49,13 @@
                 padding: 0 5px;
                 opacity: 0;
 
+                @media (max-width: #{$mobile_width}) {
+                    font-size: 1.6em;
+                }
+            }
+
+            // once element is visible, start the animation
+            .start-logo-icon-animation {
                 animation: logo-appear-and-move;
                 animation-timing-function: normal;
                 animation-duration: 1.5s;
@@ -53,6 +69,13 @@
                 opacity: 0;
                 padding: 0 5px;
 
+                @media (max-width: #{$mobile_width}) {
+                    font-size: 0.8em;
+                }
+            }
+
+            // once element is visible, start the animation
+            .start-logo-link-icon-animation {
                 animation: logo-link-appear;
                 animation-timing-function: normal;
                 animation-duration: 1s;
@@ -74,11 +97,11 @@
             @keyframes logo-appear-and-move {
                 0% {
                     opacity: 0;
-                    transform: translateX(30%);
+                    transform: translateX($cm_width);
                 }
                 #{$logo_appear_time / ($logo_appear_time * $logo_link_appear_time) * 100%} {
                     opacity: 1;
-                    transform: translateX(30%);
+                    transform: translateX($cm_width);
                 }
                 100% {
                     opacity: 1;
