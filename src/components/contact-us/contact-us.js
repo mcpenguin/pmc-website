@@ -7,7 +7,7 @@ import './contact-us.scss';
 // class for single contact me link
 // props:
 // - logoIcon: name of font awesome icon for link (eg fas fa-address-book)
-// - desc: "description" of the link (eg room number, link to discord etc)
+// - desc: "description" of the link (eg room number, link to discord etc) (as JSX)
 class ContactMeIcon extends Component {
 
     constructor(props) {
@@ -62,32 +62,32 @@ export default class ContactUs extends Component {
                 <h2>Contact Us</h2>
                 <div className='logo-container'>
                     <ContactMeIcon
-                        logoIcon="fas fa-address-book"
-                        desc="www.facebook.com/groups/uwpmc1"
+                        logoIcon="fas fa-envelope"
+                        desc="pmclub@gmail.com"
                     />
                     <ContactMeIcon
-                        logoIcon="fas fa-address-book"
-                        desc="www.facebook.com/groups/uwpmc2"
+                        logoIcon="far fa-building"
+                        desc="MC 3033"
                     />
                     <ContactMeIcon
-                        logoIcon="fas fa-address-book"
-                        desc="www.facebook.com/groups/uwpmc3"
+                        logoIcon="fas fa-phone"
+                        desc="519-888-4567 x36139"
                     />
                     <ContactMeIcon
-                        logoIcon="fas fa-address-book"
-                        desc="www.facebook.com/groups/uwpmc4"
+                        logoIcon="fab fa-discord"
+                        desc="https://discord.gg/6m9Jw9UCVF"
                     />
                     <ContactMeIcon
-                        logoIcon="fas fa-address-book"
-                        desc="www.facebook.com/groups/uwpmc5"
+                        logoIcon="fab fa-instagram"
+                        desc="@uwpmclub"
                     />
                     <ContactMeIcon
-                        logoIcon="fas fa-address-book"
-                        desc="www.facebook.com/groups/uwpmc6"
+                        logoIcon="fab fa-facebook"
+                        desc="www.facebook.com/groups/uwpmc"
                     />
                     <ContactMeIcon
-                        logoIcon="fas fa-address-book"
-                        desc="www.facebook.com/groups/uwpmc7"
+                        logoIcon="fab fa-youtube"
+                        desc="www.youtube.com/user/pmamcoclub"
                     />
                 </div>
             </section>
