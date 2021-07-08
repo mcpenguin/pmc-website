@@ -20,12 +20,12 @@ export default class Cover extends Component {
                         <div className="description combo-description">
                             <h2>Combinatorics & Optimization</h2>
                             <p>
-                                Combinatorics is an area of mathematics primarily concerned with counting, 
-                                both as a means and an end in obtaining results, and certain 
+                                Combinatorics is an area of mathematics primarily concerned with counting,
+                                both as a means and an end in obtaining results, and certain
                                 properties of finite structures.
                             </p>
                             <p>
-                                Mathematical Optimization, or mathematical programming, is the selection of a best element, 
+                                Mathematical Optimization, or mathematical programming, is the selection of a best element,
                                 with regard to some criterion, from some set of available alternatives.
                             </p>
                         </div>

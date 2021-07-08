@@ -16,6 +16,10 @@ import ContactUs from './components/contact-us/contact-us';
 import Events from './components/events/events';
 
 class HomePage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <>
@@ -30,6 +34,10 @@ class HomePage extends Component {
 }
 
 class EventsPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <>
@@ -42,6 +50,10 @@ class EventsPage extends Component {
 }
 
 class POWPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <>
@@ -53,6 +65,9 @@ class POWPage extends Component {
 }
 
 class ConstitutionPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>
@@ -64,6 +79,9 @@ class ConstitutionPage extends Component {
 }
 
 class ContactUsPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
     render() {
         return (
             <>

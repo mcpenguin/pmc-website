@@ -23,13 +23,17 @@ class ProfTalk extends Component {
     render() {
         return (
             <div className={`prof-talk ${this.props.type}`}>
-                <div>
-                    <p className='type'>{this.name}</p>
-                    <h4>{this.props.talkTitle}</h4>
-                    <h6><i className='icon fas fa-user'></i>{this.props.talkSpeaker}</h6>
-                    <h6><i className='icon fas fa-calendar-alt'></i>{this.props.talkDate}</h6>
-                    <h6><i className='icon fas fa-clock'></i>{this.props.talkTime}</h6>
-                    <h6><i className='icon fas fa-building'></i>{this.props.talkLocation}</h6>
+                <div className='sub'>
+                    <div>
+                        <p className='type'>{this.name}</p>
+                        <h4>{this.props.talkTitle}</h4>
+                    </div>
+                    <div>
+                        <h6><i className='icon fas fa-user'></i>{this.props.talkSpeaker}</h6>
+                        <h6><i className='icon fas fa-calendar-alt'></i>{this.props.talkDate}</h6>
+                        <h6><i className='icon fas fa-clock'></i>{this.props.talkTime}</h6>
+                        <h6><i className='icon fas fa-building'></i>{this.props.talkLocation}</h6>
+                    </div>
                 </div>
             </div>
         )
@@ -87,7 +91,7 @@ export default class Events extends Component {
                         type='co'
                         talkTitle='Crypto Gossip: Elliptic Curve Cryptography and the NSA'
                         talkSpeaker='Alfred Menezes'
-                        talkDate='Wendesday, April 1st'
+                        talkDate='Wednesday, April 1st'
                         talkTime='4:30 - 5:30 PM'
                         talkLocation='MC 5417'
                     />

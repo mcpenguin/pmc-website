@@ -136,13 +136,13 @@
                 }
             }
 
-            .pure-math-description {
+            .applied-math-description {
                 @extend .description;
                 background: rgb(217, 28, 60);
-                background: linear-gradient(90deg, rgba(217, 28, 60, 0.95) 0%, rgba(231, 34, 93, 0.95) 100%);
+                background: linear-gradient(90deg, rgba(217, 28, 116, 0.95) 0%, rgba(231, 34, 93, 0.95) 100%);
             }
 
-            .applied-math-description {
+            .pure-math-description {
                 @extend .description;
                 background: rgb(161, 90, 202);
                 background: linear-gradient(90deg, rgba(161, 90, 202, 0.95) 0%, rgba(131, 86, 236, 0.95) 100%);
