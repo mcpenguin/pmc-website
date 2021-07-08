@@ -13,6 +13,7 @@ import Cover from './components/cover/cover';
 import Welcome from './components/welcome/welcome';
 import FAQs from './components/faqs/faqs'
 import ContactUs from './components/contact-us/contact-us';
+import Events from './components/events/events';
 
 class HomePage extends Component {
     render() {
@@ -34,6 +35,7 @@ class EventsPage extends Component {
             <>
                 <TopNavbar />
                 <ContactUs />
+                <Events />
             </>
         )
     }
