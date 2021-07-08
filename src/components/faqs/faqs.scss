@@ -43,7 +43,7 @@
         h2 {
             font-size: 2.4em;
             font-weight: 600;
-            color: rgb(233, 10, 84);
+            color: $red_pink;
         }
 
         @media (max-width: #{$medium_desktop_width}) {
