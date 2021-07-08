@@ -134,7 +134,7 @@
             }
 
             @media (max-width: #{$small_mobile_width}) {
-                font-size: 1.3em;
+                font-size: 1.4em;
             }
         }
 
@@ -194,7 +194,9 @@
             }
 
             @media (max-width: #{$tablet_width}) {
+                width: 90vw;
                 height: 70vh;
+                padding: 0 5px;
 
                 .sub {
 
