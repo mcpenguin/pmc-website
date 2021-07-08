@@ -6,7 +6,11 @@
     padding: 0;
 
     z-index: 1000;
-    height: 80px;
+    height: 70px;
+
+    .navbar {
+        padding: 2.5px .5rem;
+    }
 
     .nav-item {
         margin: 3px 12px;
@@ -60,7 +64,7 @@
 
     .navbar-bottom-borders {
         * {
-            height: 2px;
+            height: 3px;
         }
 
         .border-1 {
