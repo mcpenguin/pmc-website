@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -28,22 +29,37 @@ class NavbarLink extends Component {
 
 export default class TopNavbar extends Component {
 
+    // get intersection observer to see whether element is in view
+    observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                this.setState({
+                    isElementVisible: entry.isIntersecting,
+                })
+            })
+        },
+        {
+            rootMargin: '0px',
+            // percentage of the windwo you need to see for the animation to start
+            threshold: 0.8,
+        }
+    )
+
     constructor(props) {
         super(props);
         this.state = {
-            matches: window.matchMedia("(max-width: 480px)").matches
+            isElementVisible: true,
         };
     }
 
     componentDidMount() {
-        const handler = e => this.setState({ matches: e.matches });
-        window.matchMedia("(max-width: 480px)").addListener(handler);
+        this.observer.observe(document.querySelector('#top-navbar'));
     }
 
     render() {
         return (
-            <section id="top-navbar" className="section-top-navbar">
-                <Navbar expand="lg" variant="light">
+            <section id="top-navbar" className={`section-top-navbar ${this.state.isElementVisible ? 'sticky' : ''}`}>
+                <Navbar expand="lg" variant="light" >
                     <Navbar.Brand href="/" className="navbar-brand">
                         <img src={logo} id="navbar-img" />
                         <span>
