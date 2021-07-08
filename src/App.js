@@ -34,8 +34,8 @@ class EventsPage extends Component {
         return (
             <>
                 <TopNavbar />
-                <ContactUs />
                 <Events />
+                <ContactUs />
             </>
         )
     }

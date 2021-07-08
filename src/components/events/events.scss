@@ -1,5 +1,67 @@
-@import '../../index';
+@import "../../index";
 
 #events {
+    margin-top: 70px;
 
+    .events-header {
+        height: 70vh;
+        background: url("./events-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .gradient {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            height: 100%;
+            background: rgb(173, 172, 32);
+            background: linear-gradient(
+                140deg,
+                rgba(173, 172, 32, 0.8) 0%,
+                rgba(204, 98, 37, 0.8) 34%,
+                rgba(176, 29, 37, 0.8) 70%,
+                rgba(194, 26, 100, 0.8) 100%
+            );
+
+            .title {
+                text-align: center;
+                padding: 20px 5%;
+                margin: 0 max(15%, 20px);
+                background: #f5f5f5cc;
+                width: 80vw;
+
+                h2 {
+                    font-size: 4em;
+                    color: $logo_black;
+
+                    @media (max-width: #{$tablet_width}) {
+                        font-size: 3em;
+                    }
+
+                    @media (max-width: #{$mobile_width}) {
+                        font-size: 2.4em;
+                    }
+                }
+
+                h6 {
+                    // font-family: 'Open Sans', sans-serif;
+                    font-weight: 400;
+                    margin: 15px 0;
+                    font-size: 1.6em;
+                    color: $logo_black;
+
+                    @media (max-width: #{$tablet_width}) {
+                        font-size: 1.4em;
+                    }
+
+                    @media (max-width: #{$mobile_width}) {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
 }
