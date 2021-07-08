@@ -10,10 +10,12 @@ $dark_purple: #52489c;
 $light_purple: #b4a0e5;
 
 // breakpoints
+$small_mobile_width: 360px;
 $mobile_width: 480px;
 $tablet_width: 768px;
 $medium_desktop_width: 990px;
 $desktop_width: 1100px;
+$large_desktop_width: 1280px;
 
 body {
     font-family: "Poppins";
