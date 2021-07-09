@@ -129,29 +129,29 @@ export default class Events extends Component {
                     </div>
                     <div className='talks'>
                         <SASMSTalk
-                            talkTitle="Representations of S3"
-                            talkSpeaker="Stephen Charles Zheng Biao Wen"
-                            talkSpeakerProgram="3A Pure Mathematics"
+                            talkTitle="Lagrange Multipliers and Graph Theory"
+                            talkSpeaker="Roger Fu"
+                            talkSpeakerProgram="3B Combinatorics & Optimization"
                         />
                         <SASMSTalk
-                            talkTitle="Representations of S3"
-                            talkSpeaker="Stephen Charles Zheng Biao Wen"
-                            talkSpeakerProgram="3A Pure Mathematics"
+                            talkTitle="We've Got Fun and Game Theory"
+                            talkSpeaker="Josue Kurke"
+                            talkSpeakerProgram="2A Applied Mathematics"
                         />
                         <SASMSTalk
-                            talkTitle="Representations of S3"
-                            talkSpeaker="Stephen Charles Zheng Biao Wen"
-                            talkSpeakerProgram="3A Pure Mathematics"
+                            talkTitle="Commutators equals to the identity"
+                            talkSpeaker="Junqiao Lin"
+                            talkSpeakerProgram="4A Pure Mathematics"
                         />
                         <SASMSTalk
-                            talkTitle="Representations of S3"
-                            talkSpeaker="Stephen Charles Zheng Biao Wen"
-                            talkSpeakerProgram="3A Pure Mathematics"
+                            talkTitle="Introduction to Combinatorial Optimization and LP Methods via the Travelling Salesman"
+                            talkSpeaker="Logan Christopher Grout"
+                            talkSpeakerProgram="3B Combinatorics & Optimization"
                         />
                         <SASMSTalk
-                            talkTitle="Representations of S3 $ax+b$"
-                            talkSpeaker="Stephen Charles Zheng Biao Wen"
-                            talkSpeakerProgram="3A Pure Mathematics"
+                            talkTitle="The many ways to solve for $Ax = b$"
+                            talkSpeaker="Joey Yu"
+                            talkSpeakerProgram="3B Pure Mathematics"
                         />
                     </div>
                     <div className='details'>

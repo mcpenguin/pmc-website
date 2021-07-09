@@ -54,7 +54,7 @@
     }
 
     h6 {
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-weight: 400;
         margin: 15px 0;
         font-size: 1.3em;
@@ -126,11 +126,11 @@
 
         h4 {
             font-size: 2.2em;
-    
+
             @media (max-width: $tablet_width) {
                 font-size: 1.8em;
             }
-    
+
             @media (max-width: #{$mobile_width}) {
                 font-size: 1.5em;
             }
@@ -201,7 +201,6 @@
                 padding: 0 5px;
 
                 .sub {
-
                     div:nth-of-type(1) {
                         height: 50%;
                     }
@@ -227,6 +226,37 @@
     }
 
     .sasms-container {
-        padding: 10px 10%;
+        padding: 5vh 10%;
+
+        .gradient {
+            background: linear-gradient(90deg, rgb(196, 8, 95) 0%, rgb(5, 67, 148) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        } 
+
+        // latex formatting
+        mjx-container {
+            font-size: 1.2em !important;
+        }
+
+        h3 {
+            @extend .gradient;
+        }
+
+        h4 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+            font-style: italic;
+            color: $red_pink;
+        }
+
+        .sasms-talk {
+            margin: 10px 0;
+            width: 60%;
+        }
     }
 }
