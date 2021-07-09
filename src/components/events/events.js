@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 // import stylesheet
 import './events.scss';
 
-// class for prof talk
+// component for prof talk
 // props:
 // - type = pm | am | co
 // - talkTitle: title of talk (as string)
@@ -35,6 +35,22 @@ class ProfTalk extends Component {
                         <h6><i className='icon fas fa-building'></i>{this.props.talkLocation}</h6>
                     </div>
                 </div>
+            </div>
+        )
+    }
+}
+
+// component for student talk (SASMS)
+// props:
+// - talkTitle: title of talk (as string)
+// - talkSpeaker: speaker of talk (as string)
+// - talkSpeakerProgram: program of speaker (eg 3A Pure Mathematics) (as string)
+class SASMSTalk extends Component {
+    render() {
+        return (
+            <div className='sasms-talk'>
+                <h4>{this.props.talkTitle}</h4>
+                <p><span>{this.props.talkSpeaker}</span> | <span>{this.props.talkSpeakerProgram}</span></p>
             </div>
         )
     }
@@ -95,6 +111,52 @@ export default class Events extends Component {
                         talkTime='4:30 - 5:30 PM'
                         talkLocation='MC 5417'
                     />
+                </div>
+                <div className='sasms-title'>
+                    <h3>SASMS</h3>
+                    <h6>
+                        Short Attention Span Math Seminars, or SASMS for short, comprises the PMC's biggest
+                        event of the term, where undergraduate students can
+                        sign up to give a short talk (20 - 25 minutes)
+                        about a subject of their choice, usually related to
+                        Pure Math, Applied Math or Combinatorics & Optimization.
+                        Snacks along with dinner are provided.
+                    </h6>
+                </div>
+                <div className='sasms-container'>
+                    <div className='title'>
+                        <h3>This Term's Talks</h3>
+                    </div>
+                    <div className='talks'>
+                        <SASMSTalk
+                            talkTitle="Representations of S3"
+                            talkSpeaker="Stephen Charles Zheng Biao Wen"
+                            talkSpeakerProgram="3A Pure Mathematics"
+                        />
+                        <SASMSTalk
+                            talkTitle="Representations of S3"
+                            talkSpeaker="Stephen Charles Zheng Biao Wen"
+                            talkSpeakerProgram="3A Pure Mathematics"
+                        />
+                        <SASMSTalk
+                            talkTitle="Representations of S3"
+                            talkSpeaker="Stephen Charles Zheng Biao Wen"
+                            talkSpeakerProgram="3A Pure Mathematics"
+                        />
+                        <SASMSTalk
+                            talkTitle="Representations of S3"
+                            talkSpeaker="Stephen Charles Zheng Biao Wen"
+                            talkSpeakerProgram="3A Pure Mathematics"
+                        />
+                        <SASMSTalk
+                            talkTitle="Representations of S3 $ax+b$"
+                            talkSpeaker="Stephen Charles Zheng Biao Wen"
+                            talkSpeakerProgram="3A Pure Mathematics"
+                        />
+                    </div>
+                    <div className='details'>
+
+                    </div>
                 </div>
             </section>
         );

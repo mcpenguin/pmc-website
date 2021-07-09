@@ -54,10 +54,10 @@
     }
 
     h6 {
-        // font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         margin: 15px 0;
-        font-size: 1.2em;
+        font-size: 1.3em;
 
         @media (max-width: #{$tablet_width}) {
             font-size: 1.1em;
@@ -220,5 +220,13 @@
         .co {
             background: url("./co-bg.svg");
         }
+    }
+
+    .sasms-title {
+        @extend .prof-talks-title;
+    }
+
+    .sasms-container {
+        padding: 10px 10%;
     }
 }
