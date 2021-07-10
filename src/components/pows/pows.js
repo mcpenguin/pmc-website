@@ -1,23 +1,28 @@
 // React component class for pows section
 import React, { Component } from 'react';
+import * as fs from 'fs';
+import * as path from 'path';
 
 // import stylesheet
 import './pows.scss';
 
 import Title from './pows/pow-1/title.jpg';
 
+import * as images from './export-images';
+
 // react class for pows
 // props:
 // - powNo: number of the pow
 // - powName: name of the pow (eg Collatz DIY Conjecture)
 // - powDate: date of the pow (eg 7th Jul 2021)
-// - powImage: image for pow background
 class POW extends Component {
+
     render() {
+
         return (
             <div className='problem'>
                 <div className='sub' style={{
-                    background: `url(${Title})`,
+                    background: `url(${images[`img${this.props.powNo}`]})`,
                     backgroundRepeat: "norepeat",
                     backgroundPosition: "center",
                     backgroundSize: "cover",
