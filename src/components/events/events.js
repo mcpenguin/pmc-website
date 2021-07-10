@@ -49,8 +49,17 @@ class SASMSTalk extends Component {
     render() {
         return (
             <div className='sasms-talk'>
-                <h4>{this.props.talkTitle}</h4>
+                <h4>⭐ {this.props.talkTitle}</h4>
                 <p><span>{this.props.talkSpeaker}</span> | <span>{this.props.talkSpeakerProgram}</span></p>
+                {/* <div className='sasms-talk-title'>
+                    <div className='cursor'></div>
+                    <div className='title'>
+                        <h4>{this.props.talkTitle}</h4>
+                    </div>
+                </div>
+                <div className='sasms-speaker'>
+                    <p><span>{this.props.talkSpeaker}</span> | <span>{this.props.talkSpeakerProgram}</span></p>
+                </div> */}
             </div>
         )
     }
@@ -124,38 +133,41 @@ export default class Events extends Component {
                     </h6>
                 </div>
                 <div className='sasms-container'>
-                    <div className='title'>
-                        <h3>This Term's Talks</h3>
-                    </div>
-                    <div className='talks'>
-                        <SASMSTalk
-                            talkTitle="Lagrange Multipliers and Graph Theory"
-                            talkSpeaker="Roger Fu"
-                            talkSpeakerProgram="3B Combinatorics & Optimization"
-                        />
-                        <SASMSTalk
-                            talkTitle="We've Got Fun and Game Theory"
-                            talkSpeaker="Josue Kurke"
-                            talkSpeakerProgram="2A Applied Mathematics"
-                        />
-                        <SASMSTalk
-                            talkTitle="Commutators equals to the identity"
-                            talkSpeaker="Junqiao Lin"
-                            talkSpeakerProgram="4A Pure Mathematics"
-                        />
-                        <SASMSTalk
-                            talkTitle="Introduction to Combinatorial Optimization and LP Methods via the Travelling Salesman"
-                            talkSpeaker="Logan Christopher Grout"
-                            talkSpeakerProgram="3B Combinatorics & Optimization"
-                        />
-                        <SASMSTalk
-                            talkTitle="The many ways to solve for $Ax = b$"
-                            talkSpeaker="Joey Yu"
-                            talkSpeakerProgram="3B Pure Mathematics"
-                        />
-                    </div>
-                    <div className='details'>
-
+                    <div className='sub'>
+                        <div className='talks'>
+                            <SASMSTalk
+                                talkTitle="Lagrange Multipliers and Graph Theory"
+                                talkSpeaker="Roger Fu"
+                                talkSpeakerProgram="3B Combinatorics & Optimization"
+                            />
+                            <SASMSTalk
+                                talkTitle="We've Got Fun and Game Theory"
+                                talkSpeaker="Josue Kurke"
+                                talkSpeakerProgram="2A Applied Mathematics"
+                            />
+                            <SASMSTalk
+                                talkTitle="Commutators equals to the identity"
+                                talkSpeaker="Junqiao Lin"
+                                talkSpeakerProgram="4A Pure Mathematics"
+                            />
+                            <SASMSTalk
+                                talkTitle="Introduction to Combinatorial Optimization and LP Methods via the Travelling Salesman"
+                                talkSpeaker="Logan Christopher Grout"
+                                talkSpeakerProgram="3B Combinatorics & Optimization"
+                            />
+                            <SASMSTalk
+                                talkTitle="The many ways to solve for Ax = b"
+                                talkSpeaker="Joey Yu"
+                                talkSpeakerProgram="3B Pure Mathematics"
+                            />
+                        </div>
+                        <div className='details'>
+                            <div>
+                                <h6><i className='icon fas fa-calendar-alt'></i>Thursday, February 27</h6>
+                                <h6><i className='icon fas fa-clock'></i>5:30 - 8:30 PM</h6>
+                                <h6><i className='icon fas fa-building'></i>MC 5417</h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
