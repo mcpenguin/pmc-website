@@ -7,6 +7,7 @@ import './contact-us.scss';
 // class for single contact me link
 // props:
 // - logoIcon: name of font awesome icon for link (eg fas fa-address-book)
+// - link: link for the contact me (optional)
 // - desc: "description" of the link (eg room number, link to discord etc) (as JSX)
 class ContactMeIcon extends Component {
 
@@ -45,7 +46,9 @@ class ContactMeIcon extends Component {
                     <i className={this.props.logoIcon}></i>
                 </div>
                 <div className={`logo-link ${this.state.isElementVisible ? 'start-logo-link-icon-animation' : ''}`}>
-                    {this.props.desc}
+                    <a href={this.props.link}>
+                        {this.props.desc}
+                    </a>
                 </div>
             </div>
         )
@@ -63,6 +66,7 @@ export default class ContactUs extends Component {
                 <div className='logo-container'>
                     <ContactMeIcon
                         logoIcon="fas fa-envelope"
+                        link="mailto:pmclub@gmail.com"
                         desc="pmclub@gmail.com"
                     />
                     <ContactMeIcon
@@ -75,18 +79,22 @@ export default class ContactUs extends Component {
                     />
                     <ContactMeIcon
                         logoIcon="fab fa-discord"
+                        link="https://discord.gg/6m9Jw9UCVF"
                         desc="https://discord.gg/6m9Jw9UCVF"
                     />
                     <ContactMeIcon
                         logoIcon="fab fa-instagram"
+                        link="https://www.instagram.com/uwpmclub/"
                         desc="@uwpmclub"
                     />
                     <ContactMeIcon
                         logoIcon="fab fa-facebook"
+                        link="www.facebook.com/groups/uwpmc"
                         desc="www.facebook.com/groups/uwpmc"
                     />
                     <ContactMeIcon
                         logoIcon="fab fa-youtube"
+                        link="www.youtube.com/user/pmamcoclub"
                         desc="www.youtube.com/user/pmamcoclub"
                     />
                 </div>

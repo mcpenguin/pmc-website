@@ -31,6 +31,10 @@
         text-align: center;
     }
 
+    a, a:hover {
+        color: $logo_black;
+    }
+
     .logo-container {
         display: flex;
         flex-wrap: wrap;
