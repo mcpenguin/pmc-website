@@ -100,7 +100,7 @@ export default class Events extends Component {
                         type='pm'
                         talkTitle='Deciding Digraph Homomorphisms'
                         talkSpeaker='Ross Willard'
-                        talkDate='Thursday, March 12th'
+                        talkDate='Thursday, Mar 12th'
                         talkTime='4:30 - 5:30 PM'
                         talkLocation='MC 5501'
                     />
@@ -108,7 +108,7 @@ export default class Events extends Component {
                         type='am'
                         talkTitle='Information Geometry: an overview'
                         talkSpeaker='Paul Marriott'
-                        talkDate='Thursday, March 21st'
+                        talkDate='Thursday, Mar 21st'
                         talkTime='4:00 - 5:00 PM'
                         talkLocation='MC 4040'
                     />
@@ -116,7 +116,7 @@ export default class Events extends Component {
                         type='co'
                         talkTitle='Crypto Gossip: Elliptic Curve Cryptography and the NSA'
                         talkSpeaker='Alfred Menezes'
-                        talkDate='Wednesday, April 1st'
+                        talkDate='Wednesday, Apr 1st'
                         talkTime='4:30 - 5:30 PM'
                         talkLocation='MC 5417'
                     />
@@ -163,7 +163,7 @@ export default class Events extends Component {
                         </div>
                         <div className='details'>
                             <div>
-                                <h6><i className='icon fas fa-calendar-alt'></i>Thursday, February 27</h6>
+                                <h6><i className='icon fas fa-calendar-alt'></i>Thursday, Feb 27</h6>
                                 <h6><i className='icon fas fa-clock'></i>5:30 - 8:30 PM</h6>
                                 <h6><i className='icon fas fa-building'></i>MC 5417</h6>
                             </div>
@@ -193,9 +193,9 @@ export default class Events extends Component {
                                     </p>
                                 </div>
                                 <div className='details'>
-                                    <h6><i className='icon fas fa-calendar-alt'></i>Thursday, February 27</h6>
-                                    <h6><i className='icon fas fa-clock'></i>5:30 - 8:30 PM</h6>
-                                    <h6><i className='icon fas fa-building'></i>MC 5417</h6>
+                                    <h6><i className='icon fas fa-calendar-alt'></i>Thursday, Nov 27</h6>
+                                    <h6><i className='icon fas fa-clock'></i>7:00 - 8:00 PM</h6>
+                                    <h6><i className='icon fas fa-building'></i>MC 2017</h6>
                                 </div>
                             </div>
                         </div>

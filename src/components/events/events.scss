@@ -348,6 +348,7 @@
                     h6 {
                         font-size: 1.5em;
                     }
+                    
                 }
             }
 
@@ -387,7 +388,6 @@
         background-position: center;
         background-size: cover;
 
-        height: 85vh;
         width: 100%;
 
         .sub {
@@ -396,13 +396,18 @@
             background: linear-gradient(45deg, rgba(14, 212, 30, 0.3) 0%, rgba(14, 185, 207, 0.3) 100%);
             @extend .center;
 
-            padding: 0 5%;
+            padding: 40px 5%;
+
+            @media (max-width: $tablet_width) {
+                padding: 40px 0;
+            }
 
             // template for other event container
             .other-event-container {
                 height: 90%;
                 width: 40%;
                 margin: 0 40px;
+                padding: 20px 0;
                 @extend .center;
                 @extend .border-outline;
 
@@ -438,29 +443,60 @@
                         }
                     }
                 }
+
+                @media (max-width: #{$large_desktop_width}) {
+                    width: 45%;
+                    height: 95%;
+                    margin: 20px 20px;
+
+                    .inner {
+                        .description {
+                            border-radius: 2%;
+                            p {
+                                font-size: 1em;
+                            }
+                        }
+
+                        .details {
+                            border-radius: 2%;
+                        }
+                    }
+                }
+
+                @media (max-width: #{$medium_desktop_width}) {
+                    width: 100%;
+                }
+
+                @media (max-width: #{$mobile_width}) {
+                    .inner {
+                        .details {
+                            .icon {
+                                margin: 0 5px;
+                            }
+                            h6 {
+                                font-size: 0.95em;
+                            }
+                        }
+                    }
+                }
             }
 
             .math-competition-container {
                 @extend .other-event-container;
-                background: url("./math-comp-bg.svg");
 
-                // .description {
-                //     background-color: #f5f5f599;
-                //     border-radius: 5%;
-                //     width: 90%;
-                //     height: 90%;
-                // }
+                background: url("./math-comp-bg.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
             }
 
             .socials-container {
                 @extend .other-event-container;
-                background: url("./socials-bg.svg");
 
-                // .description {
-                //     background-color: blue;
-                //     width: 90%;
-                //     height: 90%;
-                // }
+                background: url("./socials-bg.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
             }
         }
     }
