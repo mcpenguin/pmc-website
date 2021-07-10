@@ -1,7 +1,8 @@
 // React component class for pows section
 import React, { Component } from 'react';
-import * as fs from 'fs';
-import * as path from 'path';
+
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 
 // import stylesheet
 import './pows.scss';
@@ -20,21 +21,26 @@ class POW extends Component {
     render() {
 
         return (
-            <div className='problem'>
-                <div className='sub' style={{
-                    background: `url(${images[`img${this.props.powNo}`]})`,
-                    backgroundRepeat: "norepeat",
-                    backgroundPosition: "center",
-                    backgroundSize: "cover",
-                }}>
-                    <div className='number'>
-                        <p>#{this.props.powNo}</p>
-                    </div>
-                    <div className='date'>
-                        <p>{this.props.powDate}</p>
-                    </div>
-                    <div className='title'>
-                        <h5>{this.props.powName}</h5>
+            <div className='problem' style={{
+                background: `url(${images[`img${this.props.powNo}`]})`,
+                backgroundRepeat: "norepeat",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+            }}>
+                <div className='gradient' style={{
+                    background: `hsla(${this.props.powNo * 70}, 70%, 70%, 0.7)`,
+                }}
+                >
+                    <div className='sub'>
+                        <div className='number'>
+                            <p>#{this.props.powNo}</p>
+                        </div>
+                        <div className='date'>
+                            <p>{this.props.powDate}</p>
+                        </div>
+                        <div className='title'>
+                            <h5>{this.props.powName}</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,6 +49,7 @@ class POW extends Component {
 }
 
 export default class POWS extends Component {
+
     render() {
         return (
             <section id='pows'>
@@ -59,12 +66,13 @@ export default class POWS extends Component {
                     </div>
                 </div>
                 <div className='pows-container'>
-                    <POW
-                        powNo={1}
-                        powName="Collatz DIY Conjecture"
-                        powDate={"27th June 2021"}
-                        powImage={<Title />}
-                    />
+                    {
+                        (Array.from(Array(5).keys())).map(n => <POW
+                            powNo={5 - n}
+                            powName="Collatz DIY Conjecture"
+                            powDate={"27th June 2021"}
+                        />)
+                    }
                 </div>
             </section>
         );

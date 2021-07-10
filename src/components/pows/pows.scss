@@ -58,62 +58,69 @@
         @include center;
         padding-top: 40px;
         padding-bottom: 40px;
+        background-color: #f5f5f5cc;
 
         .problem {
             border: 5px solid black;
-            width: 25%;
+            width: 30%;
+            margin: 10px 10px;
             position: relative;
             height: 200px;
             @include center;
 
-            .sub {
-                width: 95%;
-                height: 90%;
-                position: relative;
+            .gradient {
+                width: 100%;
+                height: 100%;
+                @include center;
 
-                h5 {
-                    font-size: 1.5em;
-                    font-family: 'Maven Pro', sans-serif;
-                }
+                .sub {
+                    width: 95%;
+                    height: 100%;
+                    position: relative;
 
-                p {
-                    font-size: 1.5em;
-                    // font-family: 'Maven Pro', sans-serif;
-                }
+                    h5 {
+                        font-size: 1.8em;
+                        font-family: "Maven Pro", sans-serif;
+                        // color: white;
+                    }
 
-                .number {
-                    // top left corner
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
+                    p {
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        // color: white;
+                        // font-family: 'Maven Pro', sans-serif;
+                    }
 
-                .date {
-                    // top right corner
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
+                    .number {
+                        // top left corner
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
 
-                .title {
-                    // bottom left corner
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
+                    .date {
+                        // top right corner
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+
+                    .title {
+                        // bottom left corner
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
                 }
             }
+
+            @media (max-width: $medium_desktop_width) {
+                width: 40%;
+            }
+
+            @media (max-width: $tablet_width) {
+                width: 90%;
+            }
         }
-
-        // set (max) number of pows to 100 first (can be changed later if needed)
-        // $n: 100;
-        // // set background image for each pow
-        // @for $i from 1 through $n {
-        //     $background: none !default;
-        //     $background: url('./pows/pow-#{$i}/title.jpg');
-
-        //     .problem:nth-of-type(#{$i}) {
-        //         background: $background;
-        //     }
-        // }
     }
 }

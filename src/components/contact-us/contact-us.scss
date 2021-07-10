@@ -4,7 +4,7 @@
     height: 400px;
 
     background-color: $off_white;
-    background: url("./contact-us-bg.svg");
+    @include nice-bg('contact-us', 'contact-us-bg.svg');
 
     @media (max-width: #{$medium_desktop_width}) {
         height: 94vh;
