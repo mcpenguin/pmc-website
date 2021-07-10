@@ -83,7 +83,6 @@ export default class TopNavbar extends Component {
                             <NavbarLink id="events" title="Events" />
                             <NavbarLink id="problems-of-the-week" title="Problem of the Week" />
                             <NavbarLink id="constitution" title="Constitution" />
-                            <NavbarLink id="contact-us" title="Contact Us" />
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

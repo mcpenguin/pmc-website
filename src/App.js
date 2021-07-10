@@ -78,20 +78,6 @@ class ConstitutionPage extends Component {
     }
 }
 
-class ContactUsPage extends Component {
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-    render() {
-        return (
-            <>
-                <TopNavbar />
-                <ContactUs />
-            </>
-        )
-    }
-}
-
 export default class App extends Component {
 
     render() {
@@ -120,12 +106,6 @@ export default class App extends Component {
                         exact
                         path="/constitution"
                         component={ConstitutionPage}
-                        key={Math.random()} 
-                    />
-                    <Route
-                        exact
-                        path="/contact-us"
-                        component={ContactUsPage}
                         key={Math.random()} 
                     />
                 </Switch>
