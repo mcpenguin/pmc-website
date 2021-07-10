@@ -1,13 +1,9 @@
 // React component class for pows section
 import React, { Component } from 'react';
-
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 // import stylesheet
 import './pows.scss';
-
-import Title from './pows/pow-1/title.jpg';
 
 import * as images from './export-images';
 
@@ -21,12 +17,16 @@ class POW extends Component {
     render() {
 
         return (
-            <div className='problem' style={{
-                background: `url(${images[`img${this.props.powNo}`]})`,
-                backgroundRepeat: "norepeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-            }}>
+            <div
+                className='problem'
+                style={{
+                    background: `url(${images[`img${this.props.powNo}`]})`,
+                    backgroundRepeat: "norepeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                }}
+            >
+                {/* <Link exact to={`/problems-of-the-week/${this.props.powNo}`}> */}
                 <div className='gradient' style={{
                     background: `hsla(${this.props.powNo * 70}, 70%, 70%, 0.7)`,
                 }}
@@ -41,8 +41,14 @@ class POW extends Component {
                         <div className='title'>
                             <h5>{this.props.powName}</h5>
                         </div>
+                        <div className='view-more'>
+                            <Link exact to={`/problems-of-the-week/${this.props.powNo}`}>
+                                <h5><i className='fas fa-chevron-right'></i></h5>
+                            </Link>
+                        </div>
                     </div>
                 </div>
+                {/* </Link> */}
             </div>
         )
     }

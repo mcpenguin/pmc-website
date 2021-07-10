@@ -79,14 +79,16 @@
                     position: relative;
 
                     h5 {
-                        font-size: 1.8em;
+                        font-size: 1.7em;
                         font-family: "Maven Pro", sans-serif;
+                        color: black;
                         // color: white;
                     }
 
                     p {
                         font-size: 1.5em;
                         font-weight: 600;
+                        color: black;
                         // color: white;
                         // font-family: 'Maven Pro', sans-serif;
                     }
@@ -110,6 +112,18 @@
                         position: absolute;
                         bottom: 0;
                         left: 0;
+                    }
+
+                    .view-more {
+                        position: absolute;
+                        bottom: 0;
+                        right: 10px;
+
+                    }
+
+                    .view-more:hover {
+                        transform: transitionX(10px);
+                        transition: 0.3s;
                     }
                 }
             }
