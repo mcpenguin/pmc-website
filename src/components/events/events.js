@@ -170,6 +170,23 @@ export default class Events extends Component {
                         </div>
                     </div>
                 </div>
+                <div className='other-events-title'>
+                    <h3>Our Other Events</h3>
+                    <h6>
+                        The PMC also hosts other events other than student and prof talks, including a
+                        termly math competition and member-exclusive socials. Scroll down to find out more.
+                    </h6>
+                </div>
+                <div className='other-events-container'>
+                    <div className='sub'>
+                        <div className='math-competition-container'>
+
+                        </div>
+                        <div className='socials-container'>
+
+                        </div>
+                    </div>
+                </div>
             </section>
         );
     }
