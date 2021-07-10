@@ -41,3 +41,39 @@ h6 {
 p {
     font-family: "Open Sans", sans-serif;
 }
+
+// margin to be used for the 'cover' pages
+.cover {
+    margin-top: 70px;
+    height: 91vh;
+
+    @media (max-width: $mobile_width) {
+        margin-top: 40px;
+        height: 95vh;
+    }
+}
+
+// helper code to 'center' elements
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+// helper code to 'center' elements
+@mixin center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+// helper function to 'center' and fill background image
+// url is in the form "url('relative-file-path')"
+@mixin nice-bg($component, $filename) {
+    background: url('./components/#{$component}/#{$filename}');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
