@@ -14,6 +14,7 @@ import Welcome from './components/welcome/welcome';
 import FAQs from './components/faqs/faqs'
 import ContactUs from './components/contact-us/contact-us';
 import Events from './components/events/events';
+import POWS from './components/pows/pows';
 
 class HomePage extends Component {
     componentDidMount() {
@@ -58,6 +59,7 @@ class POWPage extends Component {
         return (
             <>
                 <TopNavbar />
+                <POWS />
                 <ContactUs />
             </>
         )
