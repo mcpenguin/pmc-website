@@ -241,8 +241,7 @@
     .sasms-container {
         // background-color: rgb(248, 198, 248);
         background: url("./sasms-bg.png");
-        background-size: 100%;
-        background-position-y: 30%;
+        background-size: cover;
         height: 100%;
 
         .gradient {
@@ -250,20 +249,6 @@
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-        }
-
-        // latex formatting
-        mjx-container {
-            font-size: 1.2em !important;
-        }
-
-        h3 {
-            // @extend .gradient;
-            color: black;
-        }
-
-        h4 {
-            font-size: 1.6em;
         }
 
         // style background 'overlay' for sasms container div
@@ -302,76 +287,16 @@
                 // background: url('./sasms-talk-bg.svg');
                 .sasms-talk {
                     padding: 5px 0;
-                    // padding: 20px 10%;
-
-                    // // animation delay between each talk
-                    // $animation_delay: 0s;
-                    // // length of each animation
-                    // $animation_length: 0.5s;
-
-                    // .sasms-talk-title {
-                    //     display: flex;
-                    //     position: relative;
-
-                    //     .title {
-                    //         position: absolute;
-                    //         top: 0;
-                    //         left: 0;
-                    //     }
-
-                    //     .cursor {
-                    //         background-color: white;
-                    //         // border-left: 2px solid black;
-                    //         width: 100%;
-                    //         height: 65px;
-                    //         z-index: 9;
-
-                    //         animation: reveal;
-                    //         animation-timing-function: normal;
-                    //         animation-duration: $animation_length;
-                    //         animation-direction: normal;
-                    //         animation-fill-mode: forwards;
-                    //     }
-
-                    //     @keyframes reveal {
-                    //         0% {
-                    //             transform: translateX(0);
-                    //             width: 100%;
-                    //         }
-                    //         100% {
-                    //             transform: translateX(91%);
-                    //             width: 100%;
-                    //         }
-                    //     }
-
-                    //     h4 {
-                    //         width: 90%;
-                    //         font-size: 1.5em;
-                    //     }
-                    // }
-
-                    // &:nth-of-type(1) {
-                    //     .cursor {
-                    //         animation-delay: 0;
-                    //     }
-                    // }
-
-                    // @for $i from 2 through 15 {
-                    //     &:nth-of-type(#{$i}) {
-                    //         .cursor {
-                    //             animation-delay: #{$animation_delay + $animation_length * ($i - 1)};
-                    //         }
-                    //     }
-                    // }
                 }
             }
 
             .details {
-                width: 35%;
+                width: max(35%, 300px);
                 height: 300px;
                 background-color: #f5f5f5;
-                margin-left: 40px;
                 @extend .border-outline;
+
+                margin-left: 40px;
 
                 display: flex;
                 justify-content: center;
@@ -384,7 +309,69 @@
                 h6 {
                     font-size: 1.5em;
                 }
+            }
 
+            @media (max-width: #{$desktop_width}) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .talks {
+                    width: 100%;
+                }
+
+                .details {
+                    margin: 40px 0;
+                    width: 60%;
+                    height: 200px;
+
+                    h6 {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            @media (max-width: #{$tablet_width}) {
+                .talks {
+                    h4 {
+                        font-size: 1.7em;
+                    }
+
+                    p {
+                        font-size: 1.1em;
+                    }
+                }
+
+                .details {
+                    width: 80%;
+                    h6 {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            @media (max-width: 520px) {
+                padding: 5vh 5%;
+
+                .talks {
+                    border-radius: 2%;
+
+                    h4 {
+                        font-size: 1.5em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
+                }
+
+                .details {
+                    width: 100%;
+
+                    h6 {
+                        font-size: 1.2em;
+                    }
+                }
             }
         }
     }
