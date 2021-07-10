@@ -180,10 +180,38 @@ export default class Events extends Component {
                 <div className='other-events-container'>
                     <div className='sub'>
                         <div className='math-competition-container'>
-
+                            <div className='inner'>
+                                <div className='description'>
+                                    <h4>Over 9000!</h4>
+                                    <p>
+                                        "Over 9000!" is one of the contests regularly hosted by the PMC. Here, participants 
+                                        answer questions of the form "Is $x$ over 9000?", where $x$ is defined differently 
+                                        each time. Usually, free snacks and dinner are provided, along with prizes for both 
+                                        winners and losers. Prizes, what snacks are provided, what is served 
+                                        for dinner, and the exact rules are at the host's discretion and 
+                                        will be explained at the beginning of the event.
+                                    </p>
+                                </div>
+                                <div className='details'>
+                                    <h6><i className='icon fas fa-calendar-alt'></i>Thursday, February 27</h6>
+                                    <h6><i className='icon fas fa-clock'></i>5:30 - 8:30 PM</h6>
+                                    <h6><i className='icon fas fa-building'></i>MC 5417</h6>
+                                </div>
+                            </div>
                         </div>
                         <div className='socials-container'>
-
+                            <div className='inner'>
+                                <div className='description'>
+                                    <h4>MOT / EOT</h4>
+                                    <p>
+                                        Middle and End of Term socials are gatherings for club members 
+                                        to chat and eat pizza. Contrary to all of our other events 
+                                        which are open to all students, these are exclusive to the 
+                                        club members and an email is usually sent to inform members of 
+                                        their dates.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
