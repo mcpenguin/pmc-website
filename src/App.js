@@ -96,13 +96,38 @@ export default class App extends Component {
 
     render() {
         return (
-            <Router>
+            <Router forceRefresh={true}>
                 <Switch>
-                    <Route exact path="/" component={HomePage} />
-                    <Route exact path="/events" component={EventsPage} />
-                    <Route exact path="/problems-of-the-week" component={POWPage} />
-                    <Route exact path="/constitution" component={ConstitutionPage} />
-                    <Route exact path="/contact-us" component={ContactUsPage} />
+                    <Route
+                        exact
+                        path="/"
+                        component={HomePage}
+                        key={Math.random()} 
+                    />
+                    <Route
+                        exact
+                        path="/events"
+                        component={EventsPage}
+                        key={Math.random()} 
+                    />
+                    <Route
+                        exact
+                        path="/problems-of-the-week"
+                        component={POWPage}
+                        key={Math.random()} 
+                    />
+                    <Route
+                        exact
+                        path="/constitution"
+                        component={ConstitutionPage}
+                        key={Math.random()} 
+                    />
+                    <Route
+                        exact
+                        path="/contact-us"
+                        component={ContactUsPage}
+                        key={Math.random()} 
+                    />
                 </Switch>
             </Router>
         );

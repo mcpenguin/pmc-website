@@ -202,13 +202,13 @@ export default class Events extends Component {
                         <div className='socials-container'>
                             <div className='inner'>
                                 <div className='description'>
-                                    <h4>MOT / EOT</h4>
+                                    <h4>MOT & EOT Socials</h4>
                                     <p>
-                                        Middle and End of Term socials are gatherings for club members 
+                                        Middle and End of Term Socials are gatherings for club members 
                                         to chat and eat pizza. Contrary to all of our other events 
-                                        which are open to all students, these are exclusive to the 
-                                        club members and an email is usually sent to inform members of 
-                                        their dates.
+                                        which are open to all students, these are only exclusive to the 
+                                        club members. An email is sent to inform members of 
+                                        the socials' dates in advance.
                                     </p>
                                 </div>
                             </div>
