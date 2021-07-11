@@ -1,5 +1,0 @@
-// export images module
-
-export { default as img1 } from './pows/pow-1/title.jpg';
-export { default as img2 } from './pows/pow-2/title.jpg';
-export { default as img3 } from './pows/pow-3/title.jpg';

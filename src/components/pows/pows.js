@@ -1,11 +1,13 @@
 // React component class for pows section
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { 
+    Link 
+} from 'react-router-dom';
 
 // import stylesheet
 import './pows.scss';
 
-import * as images from './export-images';
+import * as data from './export';
 
 // react class for pows
 // props:
@@ -20,7 +22,7 @@ class POW extends Component {
             <div
                 className='problem'
                 style={{
-                    background: `url(${images[`img${this.props.powNo}`]})`,
+                    background: `url(${data[`img${this.props.powNo}`]})`,
                     backgroundRepeat: "norepeat",
                     backgroundPosition: "center",
                     backgroundSize: "cover",
@@ -28,7 +30,7 @@ class POW extends Component {
             >
                 {/* <Link exact to={`/problems-of-the-week/${this.props.powNo}`}> */}
                 <div className='gradient' style={{
-                    background: `linear-gradient(0deg, hsla(${this.props.powNo * 70}, 70%, 60%, 0.7) 0%, #f5f5f5cc 100%)`,
+                    background: `linear-gradient(0deg, hsla(${this.props.powNo * 70}, 70%, 60%, 1) 0%, #f5f5f5dd 70%, #f5f5f5 95%)`,
                 }}
                 >
                     <div className='sub'>
@@ -36,10 +38,10 @@ class POW extends Component {
                             <p>#{this.props.powNo}</p>
                         </div>
                         <div className='date'>
-                            <p>{this.props.powDate}</p>
+                            <p>{data[`date${this.props.powNo}`]}</p>
                         </div>
                         <div className='title'>
-                            <h5>{this.props.powName}</h5>
+                            <h5>{data[`title${this.props.powNo}`]}</h5>
                         </div>
                         <div className='view-more'>
                             <Link exact to={`/problems-of-the-week/${this.props.powNo}`}>
@@ -64,9 +66,12 @@ export default class POWS extends Component {
                         <div className='description'>
                             <h2>Problem of the Week</h2>
                             <p>
-                                Problems of the Week description goes here. It is a long established fact
-                                that a reader will be distracted by the readable content of a page
-                                when looking at its layout.
+                                Every week, the PMC releases a new maths problem, affectionately
+                                named the "Problem of the Week". Everyone who submits a correct answer
+                                will be in the running to win a prize at the end of the week.
+                            </p>
+                            <p>
+                                For each problem, click the right arrow to find out more.
                             </p>
                         </div>
                     </div>
