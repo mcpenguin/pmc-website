@@ -33,7 +33,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    "init-pow": "bash init-pow.sh",
+    "add-pow": "bash add-pow.sh",
+    "update-pows": "node update-pow.js"
   },
   "eslintConfig": {
     "extends": [

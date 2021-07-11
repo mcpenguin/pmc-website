@@ -31,8 +31,7 @@ OIE XUPV RNS?
 3. !!www.101computing.net is helpful for the last line!!
 
 # Solution
-!!You will probably hate me for saying this.!! !!But I love you, Juliet.!!
-!!To be or not to be, that is the question, but I do not have an answer, alas...!!
+!!Solution would go here!!
 
 # Additional Notes
 Inspired by *The Code Book*, by Simon Singh.
