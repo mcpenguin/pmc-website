@@ -1,11 +1,24 @@
-# This is a Latex Test! I am h1
-## I am h2
-### I am h3
-#### I am h4
-##### I am h5
-###### I am h6
-I am p
-\
-\
-Here is some funky latex:\
-$E_{cell}  = E^\circ _{cell}  - \frac{{RT}}{{n\Im }}\ln Q = E^\circ _{cell}  - \frac{{0.0592}}{n}\log Q$
+
+Hey folks!
+
+Welcome back. Did I subconsciously choose this problem
+because I’m behind on all my work and I was rushing to scrape
+something together for this issue, you ask? Great question.
+Let’s take a look at this week’s problem.
+
+# Problem
+
+Can you divide a watch face into 6 parts with straight lines
+so that each part contains 2 numbers and the six sums of 2
+numbers are equal?
+
+A clock face is provided above as a reference, 
+in case you don't know what a watch looks like :p
+
+# Solution
+
+!!Solution would go here.!!
+
+# Additional Notes
+Taken from *The Moscow Puzzles: 359 Mathematical Recreations* by
+Boris A. Kordemsky, edited by Martin Gardner, (pg. 11):

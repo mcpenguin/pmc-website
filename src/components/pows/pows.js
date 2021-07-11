@@ -78,6 +78,17 @@ class POWContent extends Component {
 
 // section for POW
 export default class POWS extends Component {
+    // create the pows
+    createPOWs = () => {
+        let result = [];
+        for (let i = 1; i <= Object.keys(data).length / 2; i++) {
+            result.push(<POW
+                powNo={i}
+            />);
+        }
+        return result.reverse();
+    }
+
     render() {
         return (
             <section id='pows'>
@@ -98,11 +109,7 @@ export default class POWS extends Component {
                 </div>
                 <div className='pows-container'>
                     {
-                        (Array.from(Array(5).keys())).map(n => <POW
-                            powNo={5 - n}
-                            powName="Collatz DIY Conjecture"
-                            powDate={"27th June 2021"}
-                        />)
+                        this.createPOWs()
                     }
                 </div>
             </section>

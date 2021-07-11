@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 // import html string to markdown parser and latex formatting
 import MarkdownIt from 'markdown-it';
+import MarkdownItSpoiler from '@traptitech/markdown-it-spoiler';
 import parse from 'html-react-parser';
 import MathJax from 'react-mathjax';
 
@@ -39,6 +40,7 @@ class POWContent extends Component {
 
     render() {
         const md = new MarkdownIt();
+        md.use(MarkdownItSpoiler);
 
         return (
             <>
@@ -47,6 +49,7 @@ class POWContent extends Component {
                     <div className='sub'>
                         <h1 className='title'>POW #{this.powNo}: {this.state.title}</h1>
                         <h2 className='date'>{this.state.date}</h2>
+                        <img src={data[`img${this.powNo}`]} />
                         <hr className='line' />
                         <span className='description'>
                             <MathJax.Provider input="tex">
@@ -56,6 +59,20 @@ class POWContent extends Component {
                     </div>
                 </section>
                 <ContactUs />
+
+                {
+                    // give functionality to spoiler tags
+                    document.querySelectorAll('.spoiler').forEach(element => {
+                        element.onclick = () => {
+                            if (element.classList.contains('spoiler')) {
+                                element.classList.replace('spoiler', 'show-spoiler');
+                            }
+                            else {
+                                element.classList.replace('show-spoiler', 'spoiler');
+                            }
+                        }
+                    })
+                }
             </>
         );
     }
