@@ -1,8 +1,15 @@
 // React component class for pows section
 import React, { Component } from 'react';
-import { 
-    Link 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch,
 } from 'react-router-dom';
+
+import TopNavbar from '../navbar/navbar';
+import ContactUs from '../contact-us/contact-us';
 
 // import stylesheet
 import './pows.scss';
@@ -44,7 +51,7 @@ class POW extends Component {
                             <h5>{data[`title${this.props.powNo}`]}</h5>
                         </div>
                         <div className='view-more'>
-                            <Link exact to={`/problems-of-the-week/${this.props.powNo}`}>
+                            <Link to={`/problems-of-the-week/${this.props.powNo}`}>
                                 <h5><i className='fas fa-chevron-right'></i></h5>
                             </Link>
                         </div>
@@ -56,8 +63,19 @@ class POW extends Component {
     }
 }
 
-export default class POWS extends Component {
+// class for pow content
+class POWContent extends Component {
+    render() {
+        return (
+            <section className='pow-content'>
+                <p>Hello World {this.props.powNo}</p>
+            </section>
+        )
+    }
+}
 
+// section for POW
+export default class POWS extends Component {
     render() {
         return (
             <section id='pows'>
@@ -86,6 +104,6 @@ export default class POWS extends Component {
                     }
                 </div>
             </section>
-        );
+        )
     }
 }

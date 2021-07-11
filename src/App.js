@@ -15,6 +15,7 @@ import FAQs from './components/faqs/faqs'
 import ContactUs from './components/contact-us/contact-us';
 import Events from './components/events/events';
 import POWS from './components/pows/pows';
+import POWContent from './components/pows/pows-content';
 
 class HomePage extends Component {
     componentDidMount() {
@@ -102,6 +103,12 @@ export default class App extends Component {
                         exact
                         path="/problems-of-the-week"
                         component={POWPage}
+                        key={Math.random()} 
+                    />
+                    <Route
+                        exact
+                        path="/problems-of-the-week/:powId"
+                        component={POWContent}
                         key={Math.random()} 
                     />
                     <Route
