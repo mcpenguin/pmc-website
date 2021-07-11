@@ -15,6 +15,7 @@ import ContactUs from '../contact-us/contact-us';
 import './pows.scss';
 
 import * as data from './export';
+import contentData from './content.json';
 
 // react class for pows
 // props:
@@ -24,6 +25,7 @@ import * as data from './export';
 class POW extends Component {
 
     render() {
+        let obj = data[`details${this.props.powNo}`] || {};
 
         return (
             <div
@@ -45,10 +47,10 @@ class POW extends Component {
                             <p>#{this.props.powNo}</p>
                         </div>
                         <div className='date'>
-                            <p>{data[`date${this.props.powNo}`]}</p>
+                            <p>{obj['date']}</p>
                         </div>
                         <div className='title'>
-                            <h5>{data[`title${this.props.powNo}`]}</h5>
+                            <h5>{obj['name']}</h5>
                         </div>
                         <div className='view-more'>
                             <Link to={`/problems-of-the-week/${this.props.powNo}`}>

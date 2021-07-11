@@ -1,54 +1,58 @@
 // React component class for individual pows
 import React, { Component } from 'react';
 
-// import markdown parser
+// import html string to markdown parser and latex formatting
 import MarkdownIt from 'markdown-it';
-// import html string to html parser
-import ReactMarkdown from 'react-markdown';
+import parse from 'html-react-parser';
+import MathJax from 'react-mathjax';
 
 import TopNavbar from '../navbar/navbar';
 import ContactUs from '../contact-us/contact-us';
 
 // import data
 import * as data from './export';
-
-import test from './pows/pow-1/content.md';
+import contentData from './content.json';
 
 // import stylesheet
 import './pows-content.scss';
-import { testElement } from 'domutils';
 
 class POWContent extends Component {
 
-    md = new MarkdownIt();
     powNo = this.props.match.params.powId;
 
     constructor(props) {
         super(props);
         this.state = {
-            title: data[`title${this.powNo}`],
-            date: data[`date${this.powNo}`],
+            title: data[`details${this.powNo}`]['name'],
+            date: data[`details${this.powNo}`]['date'],
             content: "",
         }
     }
 
     componentDidMount() {
+        // load content
         const content = data[`content${this.powNo}`];
-        
-        fetch(content).then(res => res.text()).then(content => this.setState({content}));
-
+        fetch(content)
+            .then(res => res.text())
+            .then(content => this.setState({ content }));
     }
 
     render() {
+        const md = new MarkdownIt();
 
         return (
             <>
                 <TopNavbar />
                 <section className='pow-content'>
-                    <div className='description'>
-                        <h1>POW #{this.powNo}: {this.state.title}</h1>
-                        <h2>{this.state.date}</h2>
-                        <ReactMarkdown>{this.state.content}</ReactMarkdown>
+                    <div className='sub'>
+                        <h1 className='title'>POW #{this.powNo}: {this.state.title}</h1>
+                        <h2 className='date'>{this.state.date}</h2>
+                        <hr className='line' />
+                        <span className='description'>
+                            <MathJax.Provider input="tex">
+                                {parse(md.render(contentData[this.powNo]))}
+                            </MathJax.Provider>
+                        </span>
                     </div>
                 </section>
                 <ContactUs />
