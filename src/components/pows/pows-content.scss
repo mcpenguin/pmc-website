@@ -1,0 +1,11 @@
+@import '../../index.scss';
+
+.pow-content {
+    padding-top: 90px;
+    @include center;
+    
+    .description {
+        width: 60%;
+        text-align: left;
+    }
+}
