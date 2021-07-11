@@ -20,4 +20,4 @@ echo '{"name": "name of your pow goes here", "date": "date of the pow goes here"
 touch content.md
 echo "Here, you can write Markdown content for the POW." > content.md
 
-echo "Folder for POW #${noOfPOWs} has been successfully initialized"
+echo "Folder for POW #$(expr $noOfPOWs + 1) has been successfully initialized"

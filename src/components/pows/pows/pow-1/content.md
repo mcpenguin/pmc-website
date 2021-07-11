@@ -8,4 +8,4 @@ the camel must eat 1 banana for each kilometer that it walks.\
 **What is the largest number of bananas that can be transported?**
 
 # Solution
-The solution to the problem would go here.
+!!The solution to the problem would go here.!!

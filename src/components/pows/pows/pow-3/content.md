@@ -15,7 +15,7 @@ $n \times n$ board?
 
 # Solution
 
-Solution would go here.
+!!Solution would go here.!!
 
 # Additional Notes
 
