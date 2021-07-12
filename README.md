@@ -61,7 +61,7 @@ new POW. You will see it contains two files:
 - ```config.json```, which contains *the name of the POW* and *the date the POW was added*; and
 - ```content.md```, which will contain the content for the POW.
 
-#### Editing a POW
+#### Adding a POW
 You can now edit the fields in ```config.json``` accordingly and add the content for the POW in ```content.md```,
 including the problem content, solution(s) and any additional notes. Since the content is written in Markdown,
 it makes it easy to preview and modify how the content will look like. 
@@ -94,7 +94,7 @@ If you wish to edit the name, content or date of the POW after you have pushed i
 ```
 npm run update-pow
 ```
-The changes should appear on the website.
+Make sure you do this, or the changes will not appear on the website.
 
 #### Saving your changes
-Finally, you need to push your changes to the GitHub repository where the project is situated.
+Finally, you need to push your changes to the GitHub repository where the main website is located.
