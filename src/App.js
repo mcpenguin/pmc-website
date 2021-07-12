@@ -16,6 +16,7 @@ import ContactUs from './components/contact-us/contact-us';
 import Events from './components/events/events';
 import POWS from './components/pows/pows';
 import POWContent from './components/pows/pows-content';
+import Constitution from './components/constitution/constitution';
 
 class HomePage extends Component {
     componentDidMount() {
@@ -75,6 +76,7 @@ class ConstitutionPage extends Component {
         return (
             <>
                 <TopNavbar />
+                <Constitution />
                 <ContactUs />
             </>
         )
