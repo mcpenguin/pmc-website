@@ -11,6 +11,8 @@
 
 # production
 /build
+/migrate_website.sh
+/pwd
 
 # misc
 .DS_Store
