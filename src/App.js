@@ -87,7 +87,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <Router forceRefresh={true}>
+            <Router forceRefresh={true} basename="/">
                 <Switch>
                     <Route
                         exact
