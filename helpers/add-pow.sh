@@ -17,4 +17,4 @@ export {default as details${noPow}} from './pows/pow-${noPow}/config.json';
 " >> './src/components/pows/export.js';
 
 # update the json file with the content
-node update-pow.js ${noPow};
+node helpers/update-pow.js ${noPow};
