@@ -89,12 +89,12 @@ export default class ContactUs extends Component {
                     />
                     <ContactMeIcon
                         logoIcon="fab fa-facebook"
-                        link="www.facebook.com/groups/uwpmc"
+                        link="https://www.facebook.com/groups/uwpmc"
                         desc="www.facebook.com/groups/uwpmc"
                     />
                     <ContactMeIcon
                         logoIcon="fab fa-youtube"
-                        link="www.youtube.com/user/pmamcoclub"
+                        link="https://www.youtube.com/user/pmamcoclub"
                         desc="www.youtube.com/user/pmamcoclub"
                     />
                 </div>
