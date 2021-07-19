@@ -41,14 +41,6 @@ class POWContent extends Component {
         }
     }
 
-    componentDidMount() {
-        // load content
-        const content = data[`content${this.powNo}`];
-        fetch(content)
-            .then(res => res.text())
-            .then(content => this.setState({ content }));
-    }
-
     render() {
 
         return (
@@ -90,6 +82,20 @@ class POWContent extends Component {
                     </div>
                 </section>
                 <ContactUs />
+
+                {
+                    // give functionality to spoiler tags
+                    document.querySelectorAll('.spoiler').forEach(element => {
+                        element.onclick = () => {
+                            if (element.classList.contains('spoiler')) {
+                                element.classList.replace('spoiler', 'show-spoiler');
+                            }
+                            else {
+                                element.classList.replace('show-spoiler', 'spoiler');
+                            }
+                        }
+                    })
+                }
             </>
         );
     }

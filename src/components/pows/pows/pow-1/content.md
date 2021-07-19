@@ -19,9 +19,10 @@ this one… **Diminutive Rex** and **tendstofortytwo**, congratulations!
 We hope you like your complementary camel-keychain
 prize. Alternatively, you can opt for a gift card. Coincidentally,
 they have the same monetary value.
-For those wondering what the solution is, click the spoiler text below.
 
-!!The camel can transport exactly $533 \frac{1}{3}$ bananas (roughly $17%$ of the total)
+<details>
+<summary>The Solution</summary>
+The camel can transport exactly $533 \frac{1}{3}$ bananas (roughly $17%$ of the total)
 as follows: \ 
 To transport all the bananas $1$ km from the start, we
 have to make $3$ round trips, costing $5$ bananas in total (since
@@ -31,31 +32,35 @@ we only need to make 1 round trip for each km, so that’s $3$
 bananas per km. This can go on for $333 \frac{1}{3}$ km, before another
 $1000$ bananas gets eaten. From here, we only need to travel
 the remaining $466 \frac{2}{3}$ km, at $1$ banana per km, leaving us with a
-total of $533 \frac{1}{3}$ bananas at the finish line!!!
+total of $533 \frac{1}{3}$ bananas at the finish line
+</details>
 
-Now, for the winners' approaches:
+**Now, for the winners' approaches:**
 
-## tendstofortytwo's Solution
+<details>
+<summary>tendstofortytwo's Solution</summary>
 
-!!Tendstofortytwo’s solution, or rather — *computer assisted thought experiment* 
+Tendstofortytwo’s solution, or rather — *computer assisted thought experiment* 
 — was particularly interesting; they graphed the distance travelled in one go ($x$) versus total
 bananas transported ($y$), using a nifty Javascript program to
 calculate all the values. Being hindered by the finiteness of
 computing power, they arrived at the somewhat approximated answer that it is (about) optimal to travel in 1 km
 intervals.  I urge you to check out their results which you can find in this 
 [spreadsheet](https://docs.google.com/spreadsheets/d/1QIgi6lQ1lr8cJNkslepUWyw6S6Rcbq3LQP-4L2JGvM/edit?usp=sharing.) 
-and ponder about the zigzaggy corners.!!
+and ponder about the zigzaggy corners.
+</details>
 
-## Diminutive Rex's Solution
+<details>
+<summary>Diminutive Rex's Solution</summary>
 
-!!Diminutive Rex came up with a more rigorous proof, ~~showing once again that computers are inferior to pencil and paper in every way~~. 
+Diminutive Rex came up with a more rigorous proof, ~~showing once again that computers are inferior to pencil and paper in every way~~. 
 Their method of transporting bananas involved setting up “banana caches” throughout the journey, such that
 they would end up back at the start and be able to travel the whole $1000$km in one go, 
-picking up the caches as they go.!!
+picking up the caches as they go.
 
 Here is is a shortened version of their proof:
 
-!!Clearly, you must leave banana caches to get ANY bananas
+Clearly, you must leave banana caches to get ANY bananas
 past the finish line, and, clearly, you must make at least two
 trips back to the origin to pick up more bananas, if you are
 going to make the most of your bananas. The sum of all
@@ -73,7 +78,8 @@ $4$ times, but the distance from the closer cache to the further
 cache just $2$ times. This means that the further cache can store
 at most $\frac{1}{3}$ of a trip’s worth of bananas, and the closer cache
 can store at most 1/5 (two trips there, two trips back, and the
-amount cached). $\frac{1}{3}(1000) + \frac{1}{5}(1000) = 533$ bananas!!!
+amount cached). $\frac{1}{3}(1000) + \frac{1}{5}(1000) = 533$ bananas!
+</details>
 
 # Bonus: tendstofortytwo's Winning Speech
 

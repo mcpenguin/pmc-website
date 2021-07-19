@@ -70,18 +70,19 @@
             }
 
             // spoiler tags
-            // .spoiler {
-            //     background-color: black; 
-            //     padding: 3px 0;
+            .spoiler {
+                background-color: black; 
+                padding: 3px 0;
 
-            //     a {
-            //         color: black;
-            //     }
-            // }
+                a {
+                    color: black;
+                }
+            }
 
-            // .show-spoiler {
-            //     background: none;
-            // }
+
+            .show-spoiler {
+                background: none;
+            }
 
             // .spoiler:active {
             //     animation: spoiler-reveal;
