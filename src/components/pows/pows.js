@@ -39,7 +39,7 @@ class POW extends Component {
             >
                 {/* <Link exact to={`/problems-of-the-week/${this.props.powNo}`}> */}
                 <div className='gradient' style={{
-                    background: `linear-gradient(0deg, hsla(${this.props.powNo * 70}, 70%, 60%, 1) 0%, #f5f5f5dd 70%, #f5f5f5 95%)`,
+                    background: `linear-gradient(0deg, hsla(${(this.props.powNo-1) * 50}, 70%, 60%, 1) 0%, #f5f5f5dd 70%, #f5f5f5 95%)`,
                 }}
                 >
                     <div className='sub'>
