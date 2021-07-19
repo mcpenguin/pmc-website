@@ -1,4 +1,3 @@
-
 Hey folks!
 
 Welcome back. Did I subconsciously choose this problem
@@ -17,7 +16,14 @@ in case you don't know what a watch looks like :p
 
 # Solution
 
-!!Solution would go here.!!
+<details>
+<summary>
+This one was pretty simple as they say, a picture is worth a thousand words...
+</summary>
+
+
+![clock_solution](pic.png)
+</details>
 
 # Additional Notes
 Taken from *The Moscow Puzzles: 359 Mathematical Recreations* by

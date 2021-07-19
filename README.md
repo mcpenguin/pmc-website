@@ -61,6 +61,7 @@ new POW. You will see it contains two files:
 - ```config.json```, which contains *the name of the POW* and *the date the POW was added*; and
 - ```content.md```, which will contain the content for the POW.
 
+
 #### Adding a POW
 You can now edit the fields in ```config.json``` accordingly and add the content for the POW in ```content.md```,
 including the problem content, solution(s) and any additional notes. Since the content is written in Markdown,
@@ -68,10 +69,30 @@ it makes it easy to preview and modify how the content will look like.
 
 You can find a guide for the basic syntax of Markdown [here](https://www.markdownguide.org/basic-syntax/).
 
-However, note that
-- embedded images are currently not supported; and
-- you can use the syntax !!...text...!! for spoiler tags, although note that the '!!' must be inline with
-the text. (You can refer to the POWs I have done for reference.); 
+However, apart from the basic syntax, several other features are supported;
+for examples, you can refer to the other POWs in the other ```pow-X``` folders.
+In addition, if so desired, you can also edit the content in the ```content.md``` files.
+
+##### Latex 
+You can use latex by wrapping LaTEX expressions in single dollar signs \$...\$ (for inline expressions) or double dollar signs \$$...$$ (for expressions on a separate line.)
+
+##### Images
+You can now embed images in the POW. To do this,
+1. Put the image file under public/pow-images/pow-X, where *X* is the number of the POW; and
+2. Reference the file by the syntax
+```
+    ![alt](/pow-X/<image file name>)
+```
+
+##### Collapsible Sections
+You can also include collapsible sections in the POW (e.g. for solutions, hints etc.)
+The syntax is as follows:
+```
+<details>
+    <summary>Title of the collapsible</summary>
+    ...anything else you want to hide!...
+</details>
+```
 
 For examples, you can refer to the other POWs in the other ```pow-X``` folders.
 In addition, if so desired, you can also edit the content in the ```content.md``` files.
