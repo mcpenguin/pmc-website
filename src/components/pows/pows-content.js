@@ -61,6 +61,7 @@ class POWContent extends Component {
                                         // parsing images
                                         if (node.children[0].tagName === "img") {
                                             const image = node.children[0];
+                                            console.log(image);
                                             return (
                                                 <div className={"image"}>
                                                     <img
