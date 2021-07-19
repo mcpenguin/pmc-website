@@ -8,13 +8,17 @@ import parse from 'html-react-parser';
 import MathJax from 'react-mathjax';
 
 import ReactMarkdown from 'react-markdown'
+
 // remark plugins
-// strikethrough, tables, tasklists, URLs
+// GitHub Friendly Markdown: strikethrough, tables, tasklists, URLs
 import gfm from 'remark-gfm'
 // latex
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
+// render syntax highlighting for code blocks
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coy as theme } from "react-syntax-highlighter/dist/esm/styles/prism";
 // render html
 import rehypeRaw from 'rehype-raw';
 
@@ -27,6 +31,7 @@ import contentData from './content.json';
 
 // import stylesheet
 import './pows-content.scss';
+
 
 class POWContent extends Component {
 
@@ -74,11 +79,25 @@ class POWContent extends Component {
                                         // Return default child if it's not an image
                                         return <p>{children}</p>
                                     },
+                                    code: ({ node, inline, className, children, ...props }) => {
+                                        const match = /language-(\w+)/.exec(className || '')
+                                        return !inline && match ? (
+                                            <SyntaxHighlighter style={theme} language={match[1]} PreTag="div" children={String(children).replace(/\n$/, '')} {...props} />
+                                        ) : (
+                                            <code className={className} {...props}>
+                                                {children}
+                                            </code>
+                                        )
+                                    }
                                 }}
+                                // renderers={{ code: reactSyntaxHighlighter }}
                                 remarkPlugins={[remarkMath, gfm]}
                                 rehypePlugins={[rehypeKatex, rehypeRaw]}
-                                children={contentData[this.powNo]}
-                            />
+                            // children={contentData[this.powNo]}
+                            // source={test}
+                            >
+                                {contentData[this.powNo]}
+                            </ReactMarkdown>
                         </span>
                     </div>
                 </section>

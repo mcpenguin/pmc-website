@@ -71,7 +71,9 @@ You can find a guide for the basic syntax of Markdown [here](https://www.markdow
 
 However, apart from the basic syntax, several other features are supported;
 for examples, you can refer to the other POWs in the other ```pow-X``` folders.
-In addition, if so desired, you can also edit the content in the ```content.md``` files.
+
+##### HTML
+In addition to writing pure markdown, you can also write HTML, like \<h1> and so on.
 
 ##### Latex 
 You can use latex by wrapping LaTEX expressions in single dollar signs \$...\$ (for inline expressions) or double dollar signs \$$...$$ (for expressions on a separate line.)
@@ -81,7 +83,7 @@ You can now embed images in the POW. To do this,
 1. Put the image file under public/pow-images/pow-X, where *X* is the number of the POW; and
 2. Reference the file by the syntax
 ```
-    ![alt](/pow-X/<image file name>)
+    ![alt](<image file name>)
 ```
 
 ##### Collapsible Sections
@@ -90,12 +92,10 @@ The syntax is as follows:
 ```
 <details>
     <summary>Title of the collapsible</summary>
+    ... a line break (this is important!) ...
     ...anything else you want to hide!...
 </details>
 ```
-
-For examples, you can refer to the other POWs in the other ```pow-X``` folders.
-In addition, if so desired, you can also edit the content in the ```content.md``` files.
 
 #### Adding a POW cover image
 Before we can "push" our POW to the website, you need to add a 'cover' image for the POW that will be
