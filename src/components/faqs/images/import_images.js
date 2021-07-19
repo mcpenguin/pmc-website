@@ -1,7 +1,7 @@
 // js module to import images
 import mandelbrot from './mandelbrot.jpg'
 import complex_analysis from './complex_analysis.jpg'
-import fluid_dynamics from './fluid_dynamics.jpg'
+import fluid_dynamics from './fluid_dynamics.png'
 import office from './office.jpeg'
 
 const images = {
