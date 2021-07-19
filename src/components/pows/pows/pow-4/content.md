@@ -30,19 +30,55 @@ a finite number of steps (for like the first 500 numbers).
 
 # Bonuses (wait, there's more??)
 
-## Bonus
+### Bonus
 Find more than one rule!
 
-## Extra Bonus
+### Extra Bonus
 Write a program that finds and checks rules!
 
-## Super Bonus
+### Super Bonus
 Find a (non trivial) way of generating a family of rules!
 
-## MEGA Bonus
+### MEGA Bonus
 Which rules only have one cycle? Which ones have a few cycles? Do some of them have
 a finite or infinite number of cycles?
 
-## EPICC Bonus
+### EPICC Bonus
 What makes a rule more likely to reach 1 for more numbers? What makes it more likely to have longer
 (though still finite) sequences before reaching 1? Why?
+
+# Solutions
+
+This problem first asked to find a “linear Collatzian” rule of
+size $k \le 3$. Needless to say, the winners went way beyond what
+I expected, and came up with some beautiful pictures.
+
+<details>
+<summary>mcpenguin's Solution</summary>
+
+Mcpenguin's first instinct when approaching this problem
+was, naturally, to make an entire freaking website about Linear
+Collatz rules. I highly encourage you to check it out [here](https://linear-collatz.herokuapp.com/).
+I am absolutely in love with the colors and wiggly paths. In fact, the cover picture for this
+POW is a screenshot from his website!
+
+The interface is fairly simple to figure out, and the website is great for identifying
+cycles. I've lost a few hours at prod night just playing around
+with this. Don't tell the editors. I'm working hard!! Anyways,
+well done to mcpenguin.
+
+</details>
+
+<details>
+<summary>Vincent's Solution</summary>
+
+For Vincent, on the other hand, plain ol’ natural numbers were
+just too boring. Besides looking at cycles that include negative
+numbers (those come out pretty quick even for the OG Collatz
+Rule), they asked the question of applying the functions to
+complex numbers. Now the picture becomes a hell of a lot
+more chaotic. Here are some highlights:
+
+I'll leave the pleasure of figuring out what's going on in these
+images to you.
+</details>
