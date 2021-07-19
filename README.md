@@ -66,12 +66,15 @@ You can now edit the fields in ```config.json``` accordingly and add the content
 including the problem content, solution(s) and any additional notes. Since the content is written in Markdown,
 it makes it easy to preview and modify how the content will look like. 
 
+You can find a guide for the basic syntax of Markdown [here](https://www.markdownguide.org/basic-syntax/).
+
 However, note that
 - embedded images are currently not supported; and
-- you can use the syntax !!...text...!! for spoiler tags.
+- you can use the syntax !!...text...!! for spoiler tags, although note that the '!!' must be inline with
+the text. (You can refer to the POWs I have done for reference.); 
 
 For examples, you can refer to the other POWs in the other ```pow-X``` folders.
-In addition, if so desired, you can also edit the content in thw ```content.md``` files.
+In addition, if so desired, you can also edit the content in the ```content.md``` files.
 
 #### Adding a POW cover image
 Before we can "push" our POW to the website, you need to add a 'cover' image for the POW that will be

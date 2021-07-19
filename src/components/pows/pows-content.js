@@ -42,6 +42,10 @@ class POWContent extends Component {
         const md = new MarkdownIt();
         md.use(MarkdownItSpoiler);
 
+        console.log(md.render(
+            contentData[this.powNo]
+        ));
+
         return (
             <>
                 <TopNavbar />
@@ -53,7 +57,15 @@ class POWContent extends Component {
                         <hr className='line' />
                         <span className='description'>
                             <MathJax.Provider input="tex">
-                                {parse(md.render(contentData[this.powNo]))}
+                                {parse(
+                                    md.render(
+                                        contentData[this.powNo]
+                                    )
+                                        // replace spoiler tags
+                                        .replace("!!-", "<span class='spoiler'>")
+                                        .replace("-!!", "</span>")
+                                    )
+                                }
                             </MathJax.Provider>
                         </span>
                     </div>
