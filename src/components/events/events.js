@@ -98,19 +98,19 @@ export default class Events extends Component {
                 <div className='prof-talks-container'>
                     <ProfTalk
                         type='pm'
-                        talkTitle='Deciding Digraph Homomorphisms'
-                        talkSpeaker='Ross Willard'
-                        talkDate='Thursday, Mar 12th'
-                        talkTime='4:30 - 5:30 PM'
-                        talkLocation='MC 5501'
+                        talkTitle='Homomorphism-Homogeneous Graphs'
+                        talkSpeaker='Nickolas Rollick'
+                        talkDate='July 19th 2021'
+                        talkTime='5:00 PM EST'
+                        talkLocation='Online'
                     />
                     <ProfTalk
                         type='am'
-                        talkTitle='Information Geometry: an overview'
-                        talkSpeaker='Paul Marriott'
-                        talkDate='Thursday, Mar 21st'
-                        talkTime='4:00 - 5:00 PM'
-                        talkLocation='MC 4040'
+                        talkTitle='Modelling Motility of Microorganisms and Microrobots'
+                        talkSpeaker='Henry Shum'
+                        talkDate='July 7th 2021'
+                        talkTime='6:00 PM EST'
+                        talkLocation='Online'
                     />
                     <ProfTalk
                         type='co'
@@ -193,9 +193,9 @@ export default class Events extends Component {
                                     </p>
                                 </div>
                                 <div className='details'>
-                                    <h6><i className='icon fas fa-calendar-alt'></i>Thursday, Nov 27</h6>
-                                    <h6><i className='icon fas fa-clock'></i>7:00 - 8:00 PM</h6>
-                                    <h6><i className='icon fas fa-building'></i>MC 2017</h6>
+                                    <h6><i className='icon fas fa-calendar-alt'></i>August 6 2021</h6>
+                                    <h6><i className='icon fas fa-clock'></i>10:00 PM EST</h6>
+                                    <h6><i className='icon fas fa-building'></i>Online</h6>
                                 </div>
                             </div>
                         </div>
