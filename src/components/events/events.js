@@ -50,16 +50,8 @@ class SASMSTalk extends Component {
         return (
             <div className='sasms-talk'>
                 <h4>⭐ {this.props.talkTitle}</h4>
-                <p><span>{this.props.talkSpeaker}</span> | <span>{this.props.talkSpeakerProgram}</span></p>
-                {/* <div className='sasms-talk-title'>
-                    <div className='cursor'></div>
-                    <div className='title'>
-                        <h4>{this.props.talkTitle}</h4>
-                    </div>
-                </div>
-                <div className='sasms-speaker'>
-                    <p><span>{this.props.talkSpeaker}</span> | <span>{this.props.talkSpeakerProgram}</span></p>
-                </div> */}
+                {/* <p><span>{this.props.talkSpeaker}</span> | <span>{this.props.talkSpeakerProgram}</span></p> */}
+                <p><span>{this.props.talkSpeaker}</span> | {this.props.time}</p>
             </div>
         )
     }
@@ -136,36 +128,51 @@ export default class Events extends Component {
                     <div className='sub'>
                         <div className='talks'>
                             <SASMSTalk
-                                talkTitle="Lagrange Multipliers and Graph Theory"
-                                talkSpeaker="Roger Fu"
-                                talkSpeakerProgram="3B Combinatorics & Optimization"
-                            />
-                            <SASMSTalk
-                                talkTitle="We've Got Fun and Game Theory"
+                                talkTitle="An Introduction to Vinogradov's Mean Value Theorem"
                                 talkSpeaker="Josue Kurke"
-                                talkSpeakerProgram="2A Applied Mathematics"
+                                time="Wednesday, November 24 @ 7:00 PM"
                             />
                             <SASMSTalk
-                                talkTitle="Commutators equals to the identity"
-                                talkSpeaker="Junqiao Lin"
-                                talkSpeakerProgram="4A Pure Mathematics"
+                                talkTitle="Introduction to Mathematical Lion Hunting and a Topological Application"
+                                talkSpeaker="Leon Burkhardt"
+                                time="Wednesday, November 24 @ 7:30 PM"
                             />
                             <SASMSTalk
-                                talkTitle="Introduction to Combinatorial Optimization and LP Methods via the Travelling Salesman"
-                                talkSpeaker="Logan Christopher Grout"
-                                talkSpeakerProgram="3B Combinatorics & Optimization"
+                                talkTitle="Abstract Applications of the Weingarten Function to Finite Free Probability"
+                                talkSpeaker="Gavin Orok"
+                                time="Wednesday, November 24 @ 8:30 PM"
                             />
                             <SASMSTalk
-                                talkTitle="The many ways to solve for Ax = b"
-                                talkSpeaker="Joey Yu"
-                                talkSpeakerProgram="3B Pure Mathematics"
+                                talkTitle="Introduction to Algebraic Topology"
+                                talkSpeaker="Leon Yao"
+                                time="Wednesday, November 24 @ 9:00 PM"
+                            />
+                            <SASMSTalk
+                                talkTitle="Generating Combinatorial Constructions with Reinforcement Learning"
+                                talkSpeaker="Parsa Salimi"
+                                time="Thursday, November 25 @ 7:00 PM"
+                            />
+                            <SASMSTalk
+                                talkTitle="How to Multiply"
+                                talkSpeaker="Kavin Satheeskumar"
+                                time="Thursday, November 25 @ 7:30 PM"
+                            />
+                            <SASMSTalk
+                                talkTitle="Drawing Random Lines is Math, Right?"
+                                talkSpeaker="Shannon Jeffries"
+                                time="Thursday, November 25 @ 8:30 PM"
+                            />
+                            <SASMSTalk
+                                talkTitle="How *Not* To Prove Fermat's Last Theorem"
+                                talkSpeaker="Nicholas Priebe"
+                                time="Thursday, November 25 @ 9:00 PM"
                             />
                         </div>
                         <div className='details'>
                             <div>
-                                <h6><i className='icon fas fa-calendar-alt'></i>Thursday, Feb 27</h6>
-                                <h6><i className='icon fas fa-clock'></i>5:30 - 8:30 PM</h6>
-                                <h6><i className='icon fas fa-building'></i>MC 5417</h6>
+                                <h6><i className='icon fas fa-calendar-alt'></i>November 24 & 25</h6>
+                                <h6><i className='icon fas fa-clock'></i>7 - 9:30 PM</h6>
+                                <h6><i className='icon fas fa-building'></i>MC 4021</h6>
                             </div>
                         </div>
                     </div>
